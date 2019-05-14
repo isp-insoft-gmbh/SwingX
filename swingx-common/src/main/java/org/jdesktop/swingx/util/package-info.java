@@ -19,19 +19,5 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
-/**Contains utility API required by JDNC's Swing Extensions.
-
-<h2>Package Specification</h2>
-
-<ul>
-  <li><a href="">hyperlink</a>
-</ul>
-
-<h2>Related Documentation</h2>
-
-<ul>
-  <li><a href="">hyperlink</a>
-</ul>
-
-*/
+/** Contains utility API required by JDNC's Swing Extensions. */
 package org.jdesktop.swingx.util;

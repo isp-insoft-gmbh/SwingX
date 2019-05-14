@@ -2033,7 +2033,6 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
     }
 
     /**
-     * 
      * Toggles the sort order of the column at columnIndex.
      * Delegates to the SortController if available, or does nothing if not.<p>
      * 
@@ -2041,9 +2040,9 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
      * The exact behaviour is defined by the SortController's toggleSortOrder
      * implementation. Typically a unsorted column is sorted in ascending order,
      * a sorted column's order is reversed.
-     * <p>
+     * </p>
      * 
-     * PRE: 0 <= columnIndex < getColumnCount()
+     * PRE: 0 &lt;= columnIndex &lt; getColumnCount()
      * 
      * @param columnIndex the columnIndex in view coordinates.
      * 
@@ -2055,12 +2054,12 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
     }
 
     /**
-     * Sorts the table by the given column using SortOrder.
-     * Delegates to the SortController if available, or does nothing if not.<p>
-     * 
-     * PRE: 0 <= columnIndex < getColumnCount()
      * <p>
+     * Sorts the table by the given column using SortOrder.
+     * Delegates to the SortController if available, or does nothing if not.
+     * </p>
      * 
+     * PRE: 0 &lt;= columnIndex &lt; getColumnCount()
      * 
      * @param columnIndex the column index in view coordinates.
      * @param sortOrder the sort order to use.
@@ -2475,7 +2474,7 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
      *         index
      * @throws ArrayIndexOutOfBoundsException if columnIndex out of allowed
      *         range, that is if
-     *         <code> (columnIndex < 0) || (columnIndex >= getColumnCount())</code>
+     *         <code> (columnIndex &lt; 0) || (columnIndex &gt;= getColumnCount())</code>
      *         .
      * 
      * @see #getColumnExt(Object)
@@ -2494,7 +2493,7 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
      * Returns the TableColumn at the given location or null if
      * the location is outside.
      * 
-     * @param point the location to return the column for
+     * @param p the location to return the column for
      * @return the tableColumn at the location or null
      * 
      * @see #getColumnExt(Point)
@@ -2509,7 +2508,7 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
      * the location is outside or the column is not of type 
      * <code>TableColumnExt</code>.
      * 
-     * @param point the location to return the column for
+     * @param p the location to return the column for
      * @return the tableColumnExt at the location or null
      *     
      * @see #getColumn(Point)
@@ -3195,7 +3194,7 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
          * @param modelColumn the column index in model coordinates, must be valid
          * @return the first contained TableColumn with the given model index, or
          *   null if none is found
-         * @throws IllegalArgumentExcetpion if model index invalid  
+         * @throws IllegalArgumentException if model index invalid  
          */
         protected TableColumn getColumnByModelIndex(int modelColumn) {
             if ((modelColumn < 0) || (modelColumn >= getColumnCount())) {
@@ -3237,7 +3236,7 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
         }
 
         /** 
-         * @inherited <p>
+         * {@inheritDoc} <p>
          */
         @Override
         public Class<?> getColumnClass(int column) {
@@ -3689,7 +3688,7 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
      * Convenience method to get the rendering component for the given cell.
      * 
      * @param row the row of the cell to render, where 0 is the first row
-     * @param column the column of the cell to render, where 0 is the first
+     * @param col the column of the cell to render, where 0 is the first
      *        column
      * @return the decorated <code>Component</code> used as a stamp to render
      *         the specified cell

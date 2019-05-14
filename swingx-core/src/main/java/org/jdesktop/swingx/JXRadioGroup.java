@@ -52,6 +52,7 @@ import org.jdesktop.beans.JavaBean;
  * </p>
  * <p>
  * Notes:
+ * </p>
  * <ol>
  * <li>Enabling and disabling the JXRadioGroup will enable/disable all of the
  * child buttons inside the JXRadioGroup.</li>
@@ -66,7 +67,7 @@ import org.jdesktop.beans.JavaBean;
  * the JXRadioGroup normally, and then call {@link #getChildButton(int)} or
  * {@link #getChildButton(Object)} and configure the buttons.</li>
  * </ol>
- * </p>
+ * 
  * <p>
  * TODO back with a model (possibly reuse of extend {@link ComboBoxModel}
  * </p>

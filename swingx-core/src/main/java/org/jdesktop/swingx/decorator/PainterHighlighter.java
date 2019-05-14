@@ -64,7 +64,7 @@ import org.jdesktop.swingx.renderer.PainterAware;
  * 
  * &#64;Override
  * protected boolean canHighlight(Component renderer, ComponentAdapter adapter) {
- *     return super.canHighlight(renderer, adapter) &&
+ *     return super.canHighlight(renderer, adapter) &amp;&amp;
  *        (adapter.getValue() instanceof Number);
  * }
  * </code></pre>

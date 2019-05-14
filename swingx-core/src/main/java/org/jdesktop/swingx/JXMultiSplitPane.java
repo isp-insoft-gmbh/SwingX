@@ -420,17 +420,18 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
      * size of a node during a drag operation on a divider. When implementing 
      * this method in a subclass the node instance should be checked, for 
      * example:
-     * <code>
+     * <pre><code>
      * class MyMultiSplitPane extends JXMultiSplitPane
      * {
      *   protected Dimension getMaxNodeSize( MultiSplitLayout msl, Node n )
      *   {
-     *     if (( n instanceof Leaf ) && ((Leaf)n).getName().equals( "top" ))
+     *     if (( n instanceof Leaf ) &amp;&amp; ((Leaf)n).getName().equals( "top" ))
      *       return msl.maximumNodeSize( n );
      *     return null;
      *   }
      * }
-     * </code>
+     * </code></pre>
+     * 
      * @param msl the MultiSplitLayout used by this pane
      * @param n the node being resized
      * @return the maximum size or null (by default) to ignore the maximum size.

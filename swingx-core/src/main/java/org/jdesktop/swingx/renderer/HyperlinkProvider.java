@@ -29,29 +29,44 @@ import org.jdesktop.swingx.rollover.RolloverProducer;
 import org.jdesktop.swingx.rollover.RolloverRenderer;
 
 /**
- * Renderer for hyperlinks". <p>
+ * <p>
+ * Renderer for hyperlinks".
+ * </p>
  * 
- * The renderer is configured with a LinkAction<T>. 
+ * <p>
+ * The renderer is configured with a LinkAction&lt;T&gt;. 
  * It's mostly up to the developer to guarantee that the all
  * values which are passed into the getXXRendererComponent(...) are
  * compatible with T: she can provide a runtime class to check against.
  * If it isn't the renderer will configure the
- * action with a null target. <p>
+ * action with a null target.
+ * </p>
  * 
+ * <p>
  * It's recommended to not use the given Action anywhere else in code,
  * as it is updated on each getXXRendererComponent() call which might
- * lead to undesirable side-effects. <p>
+ * lead to undesirable side-effects.
+ * </p>
  * 
- * Internally uses JXHyperlink as rendering component. <p>
+ * <p>
+ * Internally uses JXHyperlink as rendering component.
+ * </p>
  * 
- * PENDING: can go from ButtonProvider? <p>
+ * <p>
+ * PENDING: can go from ButtonProvider?
+ * </p>
  * 
- * PENDING: make renderer respect selected cell state. <p>
+ * <p>
+ * PENDING: make renderer respect selected cell state.
+ * </p>
  * 
- * PENDING: TreeCellRenderer has several issues <p>
+ * <p>
+ * PENDING: TreeCellRenderer has several issues
+ * </p>
+ * 
  * <ol>
- *   <li> no icons
- *   <li> usual background highlighter issues
+ *   <li>no icons</li>
+ *   <li>usual background highlighter issues</li>
  * </ol>  
  * 
  * @author Jeanette Winzenburg

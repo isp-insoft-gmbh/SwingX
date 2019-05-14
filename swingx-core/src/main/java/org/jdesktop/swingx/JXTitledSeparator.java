@@ -40,7 +40,7 @@ import javax.swing.plaf.FontUIResource;
 import org.jdesktop.beans.JavaBean;
 
 /**
- * <p>A simple horizontal separator that contains a title.<br/>
+ * <p>A simple horizontal separator that contains a title.</p>
  *
  * <p>JXTitledSeparator allows you to specify the title via the {@link #setTitle} method.
  * The title alignment may be specified by using the {@link #setHorizontalAlignment}

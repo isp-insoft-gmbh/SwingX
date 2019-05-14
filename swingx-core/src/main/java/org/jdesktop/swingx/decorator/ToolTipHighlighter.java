@@ -79,24 +79,10 @@ public class ToolTipHighlighter extends AbstractHighlighter {
         this.toolTipValue = toolTipValue;
     }
 
-    /**
-     * Returns the StringValue used for decoration.
-     * 
-     * @return the StringValue used for decoration
-     * 
-     * @see #setToolTipValue(Font)
-     */
     public StringValue getToolTipValue() {
         return toolTipValue;
     }
     
-    /**
-     * Sets the StringValue used for decoration. May be null to use default decoration.
-     * 
-     * @param font the Font used for decoration, may be null to use default decoration.
-     * 
-     * @see #getToolTipValue()
-     */
     public void setToolTipValue(StringValue toolTipValue) {
         if (areEqual(toolTipValue, getToolTipValue())) return;
         this.toolTipValue = toolTipValue;

@@ -33,7 +33,7 @@ import org.jdesktop.swingx.plaf.HeaderUI;
 import org.jdesktop.swingx.plaf.LookAndFeelAddons;
 
 /**
- * <p><code>JXHeader is a simple component consisting of a title, a description,
+ * <p><code>JXHeader</code> is a simple component consisting of a title, a description,
  * and an icon. An example of such a component can be seen on
  * <a href="http://jext.free.fr/header.png">Romain Guys ProgX website</a></p>
  *
@@ -44,7 +44,8 @@ import org.jdesktop.swingx.plaf.LookAndFeelAddons;
  * {@link JXPanel}, providing translucency and painting delegates.</p>
  *
  * <p>If I were to reconstruct the ui shown in the above screenshot, I might
- * do so like this:<br/>
+ * do so like this:
+ * </p>
  * <pre><code>
  *      JXHeader header = new JXHeader();
  *      header.setTitle("Timing Framework Spline Editor");
@@ -53,7 +54,7 @@ import org.jdesktop.swingx.plaf.LookAndFeelAddons;
  *          "Click the Copy Code button to generate the corresponding Java code.");
  *      Icon icon = new ImageIcon(getClass().getResource("tools.png"));
  *      header.setIcon(icon);
- * </code></pre></p>
+ * </code></pre>
  *
  * Note: The HTML support doesn't exist yet. The UI delegate needs to discover whether
  * the text supplied is HTML or not, and change the content type of the editor pane
@@ -62,11 +63,10 @@ import org.jdesktop.swingx.plaf.LookAndFeelAddons;
  * so this needs to be dealt with.
  *
  * <h2>Defaults</h2>
- * <p>BasicHeaderUI uses the following UI defaults:
- *  <ul>
- *      <li><b>Header.defaultIcon:</b> The default icon to use when creating a new JXHeader.</li>
- *  </ul>
- * </p>
+ * <p>BasicHeaderUI uses the following UI defaults:</p>
+ * <ul>
+ *     <li><b>Header.defaultIcon:</b> The default icon to use when creating a new JXHeader.</li>
+ * </ul>
  *
  * @status REVIEWED
  * @author rbair
@@ -150,9 +150,9 @@ public class JXHeader extends JXPanel {
     }
 
     /**
-     * Sets the look and feel (L&F) object that renders this component.
+     * Sets the look and feel (L&amp;F) object that renders this component.
      *
-     * @param ui the HeaderUI L&F object
+     * @param ui the HeaderUI L&amp;F object
      * @see javax.swing.UIDefaults#getUI
      */
     public void setUI(HeaderUI ui) {
@@ -160,7 +160,7 @@ public class JXHeader extends JXPanel {
     }
 
     /**
-     * Returns the name of the L&F class that renders this component.
+     * Returns the name of the L&amp;F class that renders this component.
      *
      * @return the string {@link #uiClassID}
      * @see javax.swing.JComponent#getUIClassID
@@ -172,7 +172,7 @@ public class JXHeader extends JXPanel {
     }
 
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
+     * Notification from the <code>UIManager</code> that the L&amp;F has changed.
      * Replaces the current UI object with the latest version from the
      * <code>UIManager</code>.
      *

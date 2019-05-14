@@ -27,7 +27,7 @@ import java.awt.Insets;
 import java.awt.LayoutManager;
 
 /**
- * C&p'ed from swingx: keeps pref size of components. 
+ * C&amp;p'ed from swingx: keeps pref size of components. 
  * Used for quick comparing sizes.
  * 
  * Organizes components in a vertical layout.

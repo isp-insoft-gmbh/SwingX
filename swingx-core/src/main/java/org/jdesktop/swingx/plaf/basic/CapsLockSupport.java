@@ -10,8 +10,8 @@ import java.awt.event.KeyEvent;
 import org.jdesktop.beans.AbstractBean;
 
 /**
- * A class for determining the state of the {@link java.awt.event.KeyEvent.VK_CAPS_LOCK CAPS LOCK
- * key}. It also supports notification when the locking state changes.
+ * A class for determining the state of the {@link KeyEvent#VK_CAPS_LOCK CAPS-LOCK key}.
+ * It also supports notification when the locking state changes.
  * <p>
  * Although it is possible to use {@link Toolkit#getLockingKeyState(int)} to determine the current
  * state of the CAPS LOCK key, that method is not guaranteed to work on all platforms. This class
@@ -83,7 +83,7 @@ public final class CapsLockSupport extends AbstractBean implements KeyEventDispa
     }
     
     /**
-     * Determines the current state of the {@link java.awt.event.KeyEvent.VK_CAPS_LOCK CAPS LOCK key}.
+     * Determines the current state of the {@link KeyEvent#VK_CAPS_LOCK CAPS LOCK key}.
      * 
      * @return {@code true} if CAPS LOCK is enabled; {@code false} otherwise
      */

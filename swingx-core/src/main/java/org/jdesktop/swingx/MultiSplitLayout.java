@@ -415,7 +415,7 @@ public class MultiSplitLayout implements LayoutManager, Serializable
    * is the same as for JSplitPane Dividers.
    *
    * @param dividerSize the size of dividers (pixels)
-   * @throws IllegalArgumentException if dividerSize < 0
+   * @throws IllegalArgumentException if dividerSize &lt; 0
    * @see #getDividerSize
    */
   public void setDividerSize(int dividerSize) {
@@ -1283,7 +1283,7 @@ public Dimension minimumLayoutSize(Container parent) {
    * <ul>
    * <li>DEFAULT_LAYOUT - use the preferred and minimum sizes when sizing the children</li>
    * <li>LAYOUT_NO_MIN_SIZE - ignore the minimum size when sizing the children</li>
-   * </li>
+   * </ul>
    */
   public void setLayoutMode( int layoutMode )
   {
@@ -1883,9 +1883,9 @@ public void layoutContainer(Container parent)
         
     /**
      * Convenience method that returns the last child whose weight
-     * is > 0.0.
+     * is &gt; 0.0.
      *
-     * @return the last child whose weight is > 0.0.
+     * @return the last child whose weight is &gt; 0.0.
      * @see #getChildren
      * @see Node#getWeight
      */

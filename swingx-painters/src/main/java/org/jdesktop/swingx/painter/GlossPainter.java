@@ -46,7 +46,7 @@ import org.jdesktop.beans.JavaBean;
  * <p>The values shown in this examples are the values used by default if
  * they are not specified.</p>
  *
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  */
 @JavaBean
 @SuppressWarnings("nls")

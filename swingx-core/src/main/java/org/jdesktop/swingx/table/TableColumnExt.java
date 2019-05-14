@@ -29,6 +29,7 @@ import java.util.Hashtable;
 import javax.swing.DefaultCellEditor;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
+import javax.swing.RowSorter.SortKey;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.table.TableCellEditor;
@@ -402,7 +403,7 @@ public class TableColumnExt extends TableColumn implements UIDependent {
      *    sorting.
      * @see #getComparator
      * @see org.jdesktop.swingx.sort.SortController
-     * @see org.jdesktop.swingx.decorator.SortKey
+     * @see SortKey
      */
     public void setComparator(Comparator<?> comparator) {
         Comparator<?> old = getComparator();

@@ -244,7 +244,7 @@ public class JXTreeTableVisualCheck extends JXTreeTableUnitTest {
         ColumnFactory factory = new ColumnFactory() {
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public void configureTableColumn(TableModel model,

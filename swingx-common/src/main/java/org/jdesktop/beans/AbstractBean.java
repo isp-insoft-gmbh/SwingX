@@ -44,7 +44,8 @@ import java.beans.VetoableChangeSupport;
  * <p>
  * Here is a simple example bean that contains one property, foo, and the proper
  * pattern for implementing property change notification:
- * 
+ * </p>
+ *
  * <pre><code>
  * public class ABean extends AbstractBean {
  *     private String foo;
@@ -60,9 +61,7 @@ import java.beans.VetoableChangeSupport;
  *     }
  * }
  * </code></pre>
- * 
- * </p>
- * 
+ *
  * <p>
  * You will notice that "getFoo()" is used in the setFoo method rather than
  * accessing "foo" directly for the gets. This is done intentionally so that if
@@ -85,42 +84,42 @@ import java.beans.VetoableChangeSupport;
  * from "fred" to "red", but a listener deems that "red" is unexceptable. In
  * this case, the listener can fire a veto exception and the property must
  * remain "fred". For example:
- * 
+ * </p>
+ *
  * <pre><code>
- *  public class ABean extends AbstractBean {
- *    private String foo;
- *    
- *    public void setFoo(String newFoo) throws PropertyVetoException {
- *      String old = getFoo();
- *      this.foo = newFoo;
- *      fireVetoableChange(&quot;foo&quot;, old, getFoo());
- *    }
- *    public String getFoo() {
- *      return foo;
- *    }
- *  }
- * 
- *  public class Tester {
- *    public static void main(String... args) {
- *      try {
- *        ABean a = new ABean();
- *        a.setFoo(&quot;fred&quot;);
- *        a.addVetoableChangeListener(new VetoableChangeListener() {
- *          public void vetoableChange(PropertyChangeEvent evt) throws PropertyVetoException {
- *            if (&quot;red&quot;.equals(evt.getNewValue()) {
- *              throw new PropertyVetoException(&quot;Cannot be red!&quot;, evt);
- *            }
- *          }
- *        }
- *        a.setFoo(&quot;red&quot;);
- *      } catch (Exception e) {
- *        e.printStackTrace(); // this will be executed
- *      }
- *    }
- *  }
+ * public class ABean extends AbstractBean {
+ *   private String foo;
+ *   
+ *   public void setFoo(String newFoo) throws PropertyVetoException {
+ *     String old = getFoo();
+ *     this.foo = newFoo;
+ *     fireVetoableChange(&quot;foo&quot;, old, getFoo());
+ *   }
+ *   public String getFoo() {
+ *     return foo;
+ *   }
+ * }
+ *
+ * public class Tester {
+ *   public static void main(String... args) {
+ *     try {
+ *       ABean a = new ABean();
+ *       a.setFoo(&quot;fred&quot;);
+ *       a.addVetoableChangeListener(new VetoableChangeListener() {
+ *         public void vetoableChange(PropertyChangeEvent evt) throws PropertyVetoException {
+ *           if (&quot;red&quot;.equals(evt.getNewValue()) {
+ *             throw new PropertyVetoException(&quot;Cannot be red!&quot;, evt);
+ *           }
+ *         }
+ *       }
+ *       a.setFoo(&quot;red&quot;);
+ *     } catch (Exception e) {
+ *       e.printStackTrace(); // this will be executed
+ *     }
+ *   }
+ * }
  * </code></pre>
  * 
- * </p>
  * <p>
  * {@code AbstractBean} is not {@link java.io.Serializable}. Special care must
  * be taken when creating {@code Serializable} subclasses, as the
@@ -217,7 +216,7 @@ public abstract class AbstractBean {
      * 
      * <pre>
      * PropertyChangeListener[] listeners = bean.getPropertyChangeListeners();
-     * for (int i = 0; i < listeners.length; i++) {
+     * for (int i = 0; i &lt; listeners.length; i++) {
      *     if (listeners[i] instanceof PropertyChangeListenerProxy) {
      *     PropertyChangeListenerProxy proxy = 
      *                    (PropertyChangeListenerProxy)listeners[i];

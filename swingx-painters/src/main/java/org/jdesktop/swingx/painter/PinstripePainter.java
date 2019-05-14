@@ -173,7 +173,7 @@ public class PinstripePainter extends AbstractPainter<Object> {
     }
 
     /**
-     * Sets the angle, in degrees, at which to paint the pinstripes. If the given angle is < 0 or >
+     * Sets the angle, in degrees, at which to paint the pinstripes. If the given angle is &lt; 0 or &gt;
      * 360, it will be appropriately constrained. For example, if a value of 365 is given, it will
      * result in 5 degrees. The conversion is not perfect, but "a man on a galloping horse won't be
      * able to tell the difference".

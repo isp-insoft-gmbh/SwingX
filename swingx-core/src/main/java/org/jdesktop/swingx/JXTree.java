@@ -104,7 +104,7 @@ import org.jdesktop.swingx.tree.DefaultXTreeCellRenderer;
  *    public boolean isHighlighted(Component renderer,
  *                     ComponentAdapter adapter) {
  *       File file = getUserObject(adapter.getValue());
- *       return file != null ? lastWeek < file.lastModified : false;
+ *       return file != null ? lastWeek &lt; file.lastModified : false;
  *    }
  * };
  * // highlight with foreground color 
@@ -648,10 +648,6 @@ public class JXTree extends JTree {
      * @see #setForeground
      * @see #setBackground
      * @see #setFont
-     * @beaninfo
-     *       bound: true
-     *   attribute: visualUpdate true
-     * description: The foreground color of selected cells.
      */
     public void setSelectionForeground(Color selectionForeground) {
         Object oldValue = getSelectionForeground();
@@ -676,10 +672,6 @@ public class JXTree extends JTree {
      * @see #setForeground
      * @see #setBackground
      * @see #setFont
-     * @beaninfo
-     *       bound: true
-     *   attribute: visualUpdate true
-     * description: The background color of selected cells.
      */
     public void setSelectionBackground(Color selectionBackground) {
         Object oldValue = getSelectionBackground();
@@ -1220,7 +1212,7 @@ public class JXTree extends JTree {
      * after messaging the delegate.<p>
      * 
      * PENDING JW: formally implement UIDependent? 
-     * PENDING JW: missing updateUI anyway (got lost when c&p from JXList ;-)
+     * PENDING JW: missing updateUI anyway (got lost when c&amp;p from JXList ;-)
      * PENDING JW: missing override of updateUI in xtree ...
      */
     public class DelegatingRenderer implements TreeCellRenderer, RolloverRenderer {

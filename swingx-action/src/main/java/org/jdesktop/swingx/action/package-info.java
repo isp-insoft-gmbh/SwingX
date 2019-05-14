@@ -58,9 +58,10 @@
  * then the action will be dispatched up the containment hierarchy until the action 
  * is consumed. If the action is not consumed then it will be dispatched to the 
  * Application instance which manages an application global set of actions.
+ * </p>
  * <p>
  * These are the key classes or the actions architecture:
- * <p>
+ * </p>
  * <dl>
  * <dt> {@link org.jdesktop.swingx.action.ActionManager}</dt>
  * <dd> A repository of all shared actions in the application.
@@ -97,6 +98,6 @@
  * </dl>
  *
  * <hr>
- * <address><a href="mailto:richard.bair@sun.com">Richard Bair</a></address>
+ * <a href="mailto:richard.bair@sun.com">Richard Bair</a>
  */
 package org.jdesktop.swingx.action;

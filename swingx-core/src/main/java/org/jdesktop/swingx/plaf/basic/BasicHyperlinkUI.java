@@ -346,7 +346,7 @@ public class BasicHyperlinkUI extends BasicButtonUI {
     }
 
     /**
-     * C&p'ed from BasicGraphicsUtils (getPreferredButtonSize).
+     * C&amp;p'ed from BasicGraphicsUtils (getPreferredButtonSize).
      * 
      * @param b the button to analyse.
      * @return the union of the text and icon rectangle of the AbstractButton

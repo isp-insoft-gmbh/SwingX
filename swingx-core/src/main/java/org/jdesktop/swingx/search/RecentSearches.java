@@ -22,9 +22,9 @@ import org.jdesktop.swingx.plaf.UIManagerExt;
 /**
  * Maintains a list of recent searches and persists this list automatically
  * using {@link Preferences}. A recent searches popup menu can be installed on
- * a {@link JXSearchField} using {@link #install(JXSearchField)}.
+ * a {@link JXSearchField} using {@link #install(JTextField)}
  * 
- * @author Peter Weishapl <petw@gmx.net>
+ * @author Peter Weishapl &lt;petw@gmx.net&gt;
  * 
  */
 public class RecentSearches implements ActionListener {
@@ -53,7 +53,7 @@ public class RecentSearches implements ActionListener {
 	 * persist this list under the <code>prefs</code> node. Existing entries
 	 * will be loaded automatically.
 	 * 
-	 * @param prefsNode
+	 * @param prefs
 	 *            the preferences node under which this list will be persisted.
 	 *            If prefsNode is <code>null</code> the preferences node will
 	 *            be set to the user root node
@@ -227,7 +227,7 @@ public class RecentSearches implements ActionListener {
 
 	/**
 	 * Creates the recent searches popup menu which will be used by
-	 * {@link #install(JXSearchField)} to set a search popup menu on
+	 * {@link #install(JTextField)} to set a search popup menu on
 	 * <code>searchField</code>.
 	 * 
 	 * Override to return a custom popup menu.
@@ -242,7 +242,7 @@ public class RecentSearches implements ActionListener {
 
 	/**
 	 * Install a recent the searches popup menu returned by
-	 * {@link #createPopupMenu(JXSearchField)} on <code>searchField</code>.
+	 * {@link #createPopupMenu(JTextField)} on <code>searchField</code>.
 	 * Also registers an {@link ActionListener} on <code>searchField</code>
 	 * and adds the search string to the list of recent searches whenever a
 	 * {@link ActionEvent} is received.
@@ -285,7 +285,7 @@ public class RecentSearches implements ActionListener {
 
 	/**
 	 * The popup menu returned by
-	 * {@link RecentSearches#createPopupMenu(JXSearchField)}.
+	 * {@link RecentSearches#createPopupMenu(JTextField)}.
 	 */
 	public static class RecentSearchesPopup extends JPopupMenu implements ActionListener, ChangeListener {
 		private RecentSearches recentSearches;

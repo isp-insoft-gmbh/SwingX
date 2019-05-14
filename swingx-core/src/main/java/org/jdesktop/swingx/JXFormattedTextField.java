@@ -19,7 +19,7 @@ import org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior;
  * 
  * @see PromptSupport
  * @see BuddySupport
- * @author Peter Weishapl <petw@gmx.net>
+ * @author Peter Weishapl &lt;petw@gmx.net&gt;
  * 
  */
 public class JXFormattedTextField extends JFormattedTextField {

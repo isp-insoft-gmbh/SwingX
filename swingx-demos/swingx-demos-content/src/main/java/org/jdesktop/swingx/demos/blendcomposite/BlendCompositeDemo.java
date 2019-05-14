@@ -56,7 +56,7 @@ import com.sun.swingset3.DemoProperties;
  * A demo for the {@code BlendComposite}.
  *
  * @author Karl George Schaefer
- * @author Romain Guy <romain.guy@mac.com> (original version)
+ * @author Romain Guy &lt;romain.guy@mac.com&gt; (original version)
  */
 @DemoProperties(
     value = "BlendComposite Demo",

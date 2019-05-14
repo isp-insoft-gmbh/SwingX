@@ -117,26 +117,6 @@ import org.jdesktop.swingx.plaf.TaskPaneUI;
  * @see org.jdesktop.swingx.JXCollapsiblePane
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
  * @author Karl George Schaefer
- * 
- * @javabean.attribute
- *          name="isContainer"
- *          value="Boolean.TRUE"
- *          rtexpr="true"
- *          
- * @javabean.attribute
- *          name="containerDelegate"
- *          value="getContentPane"
- *          
- * @javabean.class
- *          name="JXTaskPane"
- *          shortDescription="JXTaskPane is a container for tasks and other arbitrary components."
- *          stopClass="java.awt.Component"
- * 
- * @javabean.icons
- *          mono16="JXTaskPane16-mono.gif"
- *          color16="JXTaskPane16.gif"
- *          mono32="JXTaskPane32-mono.gif"
- *          color32="JXTaskPane32.gif"
  */
 @JavaBean
 @SuppressWarnings("nls")
@@ -257,7 +237,7 @@ public class JXTaskPane extends JPanel implements
   }
   
   /**
-   * Notification from the <code>UIManager</code> that the L&F has changed.
+   * Notification from the <code>UIManager</code> that the L&amp;F has changed.
    * Replaces the current UI object with the latest version from the <code>UIManager</code>.
    * 
    * @see javax.swing.JComponent#updateUI
@@ -273,20 +253,17 @@ public class JXTaskPane extends JPanel implements
   }
   
   /**
-   * Sets the L&F object that renders this component.
+   * Sets the L&amp;F object that renders this component.
    * 
-   * @param ui the <code>TaskPaneUI</code> L&F object
+   * @param ui the <code>TaskPaneUI</code> L&amp;F object
    * @see javax.swing.UIDefaults#getUI
-   * 
-   * @beaninfo bound: true hidden: true description: The UI object that
-   * implements the taskpane group's LookAndFeel.
    */
   public void setUI(TaskPaneUI ui) {
     super.setUI(ui);
   }
 
   /**
-   * Returns the name of the L&F class that renders this component.
+   * Returns the name of the L&amp;F class that renders this component.
    * 
    * @return the string {@link #uiClassID}
    * @see javax.swing.JComponent#getUIClassID
@@ -310,9 +287,6 @@ public class JXTaskPane extends JPanel implements
    * Sets the title to be displayed in the border of this pane.
    * 
    * @param title the title to be displayed in the border of this pane
-   * @javabean.property
-   *          bound="true"
-   *          preferred="true"
    */
   public void setTitle(String title) {
     String old = this.title;
@@ -335,9 +309,6 @@ public class JXTaskPane extends JPanel implements
    * the recommended icon size.
    * 
    * @param icon the icon to be displayed in the border of this pane
-   * @javabean.property
-   *          bound="true"
-   *          preferred="true"
    */
   public void setIcon(Icon icon) {
     Icon old = this.icon;
@@ -368,7 +339,6 @@ public class JXTaskPane extends JPanel implements
    * 
    * @param special
    *          true if this pane is "special", false otherwise
-   * @javabean.property bound="true" preferred="true"
    */
   public void setSpecial(boolean special) {
       boolean oldValue = isSpecial();
@@ -383,10 +353,6 @@ public class JXTaskPane extends JPanel implements
    * visible if this group is expanded.
    * 
    * @see #setCollapsed(boolean)
-   * 
-   * @javabean.property
-   *          bound="true"
-   *          preferred="true"
    */
   public void setScrollOnExpand(boolean scrollOnExpand) {
       boolean oldValue = isScrollOnExpand();
@@ -415,9 +381,6 @@ public class JXTaskPane extends JPanel implements
      * 
      * @param collapsed
      *                true to collapse the group, false to expand it
-     * @javabean.property
-     *          bound="true"
-     *          preferred="false"
      */
     public void setCollapsed(boolean collapsed) {
         collapsePane.setCollapsed(collapsed);
@@ -437,9 +400,6 @@ public class JXTaskPane extends JPanel implements
    * Enables or disables animation during expand/collapse transition.
    * 
    * @param animated
-   * @javabean.property
-   *          bound="true"
-   *          preferred="true"
    */
   public void setAnimated(boolean animated) {
       boolean oldValue = isAnimated();

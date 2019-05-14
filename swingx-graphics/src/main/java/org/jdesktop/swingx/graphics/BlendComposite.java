@@ -6,7 +6,7 @@
  * Copyright 2005 Sun Microsystems, Inc., 4150 Network Circle,
  * Santa Clara, California 95054, U.S.A. All rights reserved.
  *
- * Copyright (c) 2006 Romain Guy <romain.guy@mac.com>
+ * Copyright (c) 2006 Romain Guy &lt;romain.guy@mac.com&gt;
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -94,7 +94,7 @@ import java.awt.image.WritableRaster;
  * @see java.awt.Graphics2D
  * @see java.awt.Composite
  * @see java.awt.AlphaComposite
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  * @author Karl Schaefer (support and additional modes)
  */
 public final class BlendComposite implements Composite {
@@ -102,7 +102,7 @@ public final class BlendComposite implements Composite {
      * A blending mode defines the compositing rule of a
      * {@link org.jdesktop.swingx.graphics.BlendComposite}.
      * 
-     * @author Romain Guy <romain.guy@mac.com>
+     * @author Romain Guy &lt;romain.guy@mac.com&gt;
      * @author Karl Schaefer (support and additional modes)
      */
     public enum BlendingMode {

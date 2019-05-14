@@ -6,7 +6,7 @@
  * Copyright 2005 Sun Microsystems, Inc., 4150 Network Circle,
  * Santa Clara, California 95054, U.S.A. All rights reserved.
  *
- * Copyright (c) 2006 Romain Guy <romain.guy@mac.com>
+ * Copyright (c) 2006 Romain Guy &lt;romain.guy@mac.com&gt;
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -49,7 +49,7 @@ import java.awt.geom.Rectangle2D;
  * branches. The outer radius is the distance between the center of the star
  * and the tips of the branches.</p>
  *
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  */
 
 public class Star2D implements Shape {
@@ -72,7 +72,7 @@ public class Star2D implements Shape {
      * @param outerRadius the distance between the center of the star and the
      *   tip of the branches
      * @param branchesCount the number of branches in this star; must be &gt;= 3
-     * @throws IllegalArgumentException if <code>branchesCount<code> is < 3 or
+     * @throws IllegalArgumentException if <code>branchesCount</code> is &lt; 3 or
      *   if <code>innerRadius</code> is &gt;= <code>outerRadius</code>
      */
     public Star2D(double x, double y,

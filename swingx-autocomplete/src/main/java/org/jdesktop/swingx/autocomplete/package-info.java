@@ -29,7 +29,7 @@
  * resulting user experience. Suppose the user types 'J','O','R' and 'G'...
  * </p>
  * <p>
- * <img src="doc-files/example.gif"/>
+ * <img src="doc-files/example.gif" alt="An animated picture showing how the autocomplete works for the user.">
  * </p>
  * <p>
  * The easiest way to get automatic completion for a component is to use the
@@ -38,9 +38,9 @@
  * <p>Enabling automatic completion for e.g. a JComboBox is only one line of
  * code:</p>
  * <p><code>
- * <span class="keyword">import</span> org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;<br/>
- * [...]<br/>
- * JComboBox comboBox = [...];<br/>
+ * <span class="keyword">import</span> org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;<br>
+ * [...]<br>
+ * JComboBox comboBox = [...];<br>
  * AutoCompleteDecorator.<b>decorate</b>(comboBox);
  * </code></p>
  * <p>When the combo box is not editable when calling
@@ -55,10 +55,10 @@
  * instead of the standard DefaultCellEditor:
  * </p>
  * <p><code>
- * JTable table = [...];<br/>
- * JComboBox comboBox = [...];<br/>
- * [...]<br/>
- * TableColumn column = table.<b>getColumnModel()</b>.<b>getColumn</b>([...]);<br/>
+ * JTable table = [...];<br>
+ * JComboBox comboBox = [...];<br>
+ * [...]<br>
+ * TableColumn column = table.<b>getColumnModel()</b>.<b>getColumn</b>([...]);<br>
  * column.<b>setCellEditor</b>(<span class="keyword">new</span> <b>ComboBoxCellEditor</b>(comboBox));
  * </code></p>
  * <p>
@@ -82,8 +82,8 @@
  * </p>
  * <p>
  * <code>
- * AbstractAutoCompleteAdaptor adaptor = <span class="keyword">new</span> <b>YourAdaptor</b>([...]);<br/>
- * AutoCompleteDocument document = <span class="keyword">new</span> <b>AutoCompleteDocument</b>(adaptor, true); <span class="comment">// or false if you need non-strict matching</span><br/>
+ * AbstractAutoCompleteAdaptor adaptor = <span class="keyword">new</span> <b>YourAdaptor</b>([...]);<br>
+ * AutoCompleteDocument document = <span class="keyword">new</span> <b>AutoCompleteDocument</b>(adaptor, true); <span class="comment">// or false if you need non-strict matching</span><br>
  * AutoCompleteDecorator.<b>decorate</b>(yourTextComponent, document, adaptor);
  * </code>
  * </p>

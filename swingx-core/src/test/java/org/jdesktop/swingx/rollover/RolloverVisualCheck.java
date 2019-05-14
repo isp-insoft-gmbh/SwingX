@@ -359,14 +359,14 @@ public class RolloverVisualCheck extends InteractiveTestCase {
         final JXList list = new JXList(AncientSwingTeam.createNamedColorListModel()) {
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             protected RolloverProducer createRolloverProducer() {
                 ListRolloverProducer producer = new ListRolloverProducer() {
 
                     /** 
-                     * @inherited <p>
+                     * {@inheritDoc} <p>
                      */
                     @Override
                     public void mouseDragged(MouseEvent e) {
@@ -388,7 +388,7 @@ public class RolloverVisualCheck extends InteractiveTestCase {
         TransferHandler handler = new TransferHandler() {
             
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public boolean canImport(TransferSupport support) {
@@ -422,7 +422,7 @@ public class RolloverVisualCheck extends InteractiveTestCase {
         TransferHandler handler = new TransferHandler() {
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public boolean canImport(TransferSupport support) {
@@ -454,7 +454,7 @@ public class RolloverVisualCheck extends InteractiveTestCase {
         TransferHandler handler = new TransferHandler() {
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public boolean canImport(TransferSupport support) {

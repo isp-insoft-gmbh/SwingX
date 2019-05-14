@@ -124,7 +124,7 @@ public class BusyPainter extends AbstractPainter<Object> {
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     @Override
     protected void doPaint(Graphics2D g, Object t, int width, int height) {

@@ -615,10 +615,6 @@ public class JXList extends JList {
      *
      * @param autoCreateRowSorter whether or not a {@code RowSorter}
      *        should be automatically created
-     * @beaninfo
-     *        bound: true
-     *    preferred: true
-     *  description: Whether or not to turn on sorting by default.
      */
     public void setAutoCreateRowSorter(boolean autoCreateRowSorter) {
         if (getAutoCreateRowSorter() == autoCreateRowSorter) return;
@@ -961,7 +957,7 @@ public class JXList extends JList {
      * 
      * @param viewIndex the index in view coordinates
      * @return the element at the index
-     * @throws IndexOutOfBoundsException if viewIndex < 0 or viewIndex >=
+     * @throws IndexOutOfBoundsException if viewIndex &lt; 0 or viewIndex &gt;=
      *         getElementCount()
      */
     public Object getElementAt(int viewIndex) {
@@ -976,6 +972,7 @@ public class JXList extends JList {
      * <p>
      * This is a convenience method that simply returns the model value for
      * {@code getMinSelectionIndex}, taking into account sorting and filtering.
+     * </p>
      *
      * @return the first selected value
      * @see #getMinSelectionIndex
@@ -1054,7 +1051,7 @@ public class JXList extends JList {
      * 
      * @param viewIndex index in view coordinates
      * @return index in model coordinates
-     * @throws IndexOutOfBoundsException if viewIndex < 0 or viewIndex >= getElementCount() 
+     * @throws IndexOutOfBoundsException if viewIndex &lt; 0 or viewIndex &gt;= getElementCount() 
      */
     public int convertIndexToModel(int viewIndex) {
         return getRowSorter() != null ? 

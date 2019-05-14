@@ -106,7 +106,7 @@ public class ListSortUITest extends InteractiveTestCase {
     }
     /**
      * Issue #1536-swingx: AIOOB on restoring selection with filter
-     * This is a core issue, sneaked into ListSortUI by c&p
+     * This is a core issue, sneaked into ListSortUI by c&amp;p
      * 
      */
     @Test

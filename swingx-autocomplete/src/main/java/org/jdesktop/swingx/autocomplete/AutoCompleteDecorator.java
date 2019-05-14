@@ -51,7 +51,8 @@ import org.jdesktop.swingx.autocomplete.workarounds.MacOSXPopupLocationFix;
  * This class contains only static utility methods that can be used to set up
  * automatic completion for some Swing components.
  * <p>Usage examples:</p>
- * <p><pre><code>
+ *
+ * <pre><code>
  * JComboBox comboBox = [...];
  * AutoCompleteDecorator.<b>decorate</b>(comboBox);
  * 
@@ -62,7 +63,7 @@ import org.jdesktop.swingx.autocomplete.workarounds.MacOSXPopupLocationFix;
  * JList list = [...];
  * JTextField textField = [...];
  * AutoCompleteDecorator.<b>decorate</b>(list, textField);
- * </code></pre></p>
+ * </code></pre>
  *
  * @author Thomas Bierhance
  * @author Karl Schaefer

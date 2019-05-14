@@ -26,7 +26,6 @@
  * data-centric client applications. Many of these features will eventually
  * be incorporated into the Swing toolkit, although API compatibility will
  * not be guaranteed.
- * <p>
  * 
  * <h2>New or Enhanced Functionality</h2>
  * 
@@ -49,7 +48,7 @@
  * the background painter to paint the requested color.
  * <p>
  * Look and Feel implementors should note that setting a 
- * {@link java.swing.plaf.UIResource} to {@code setBackground} will cause a 
+ * {@link javax.swing.plaf.UIResource} to {@code setBackground} will cause a 
  * {@code Painter} {@code UIResource} to be installed.  This means that 
  * implementors should set the background before setting the painter as the last 
  * one set wins. 

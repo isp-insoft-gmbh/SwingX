@@ -37,7 +37,7 @@ import java.awt.geom.Rectangle2D;
  * <p>Both shapes must have the same winding rule.</p>
  *
  * @author Jim Graham
- * @author Romain Guy <romain.guy@mac.com> (Maintainer)
+ * @author Romain Guy &lt;romain.guy@mac.com&gt; (Maintainer)
  */
 public class Morphing2D implements Shape {
     private double morph;

@@ -44,7 +44,7 @@ import org.jdesktop.swingx.SwingXUtilities;
  * pixels. An instance of this class is maintained per AppContext, and the
  * public static methods call into the appropriate instance. <p>
  * 
- * This is a c&p of core (package private) needed for BasicXListUI. It differs from
+ * This is a c&amp;p of core (package private) needed for BasicXListUI. It differs from
  * core in that references to sun packages have been replaced.
  * <ul>
  * <li> a static method of SunDragSourceContextPeer has been copied into SwingXUtilities

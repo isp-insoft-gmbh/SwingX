@@ -387,7 +387,7 @@ public class BasicErrorPaneUI extends ErrorPaneUI {
     //    ===============================
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     @Override
     public JFrame getErrorFrame(Component owner) {
@@ -400,7 +400,7 @@ public class BasicErrorPaneUI extends ErrorPaneUI {
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     @Override
     public JDialog getErrorDialog(Component owner) {
@@ -422,7 +422,7 @@ public class BasicErrorPaneUI extends ErrorPaneUI {
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     @Override
     public JInternalFrame getErrorInternalFrame(Component owner) {
@@ -696,7 +696,7 @@ public class BasicErrorPaneUI extends ErrorPaneUI {
         }
 
         /**
-         * @inheritDoc
+         * {@inheritDoc}
          */
         @Override
         public void actionPerformed(ActionEvent e) {

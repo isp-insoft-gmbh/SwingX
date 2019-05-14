@@ -206,7 +206,7 @@ public class JTableIssues extends InteractiveTestCase {
     
     /**
      * Issue #1536-swingx: AIOOB on restoring selection with filter
-     * This is a core issue, sneaked into ListSortUI by c&p
+     * This is a core issue, sneaked into ListSortUI by c&amp;p
      * 
      * Analyzed by reporter to incorrect method usage in SortManager
      * cacheSelection: selectionModel.insert/removeIndexInterval length of range 

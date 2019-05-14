@@ -28,7 +28,7 @@ import org.jdesktop.beans.editors.PainterPropertyEditor;
 /**
  * Bean info for {@link org.jdesktop.swingx.JXMultiSplitPane} component.
  *
- * @author Hans Muller <Hans.Muller@Sun.COM>
+ * @author Hans Muller &lt;Hans.Muller@Sun.COM&gt;
  */
 public class JXMultiSplitPaneBeanInfo extends BeanInfoSupport {
     public JXMultiSplitPaneBeanInfo() {

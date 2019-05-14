@@ -141,7 +141,7 @@ public class JXHeaderTest extends TestCase {
  * title label. So we have one group comprised of tests A-D for each of them,
  * denoted by the respective postfix.
  * 
- * PENDING JW: any way to auto-create this tests? The groups are created by c&p
+ * PENDING JW: any way to auto-create this tests? The groups are created by c&amp;p
  * and replace ... error-prone and in fact, introduced testing errors. Which
  * passed accidentally because the tested properties had the same default value
  * (f.i. Color.BLACK or so).

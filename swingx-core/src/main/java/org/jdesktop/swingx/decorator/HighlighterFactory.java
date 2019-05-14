@@ -218,7 +218,7 @@ public final class HighlighterFactory {
 
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     @Override
     public void updateUI() {

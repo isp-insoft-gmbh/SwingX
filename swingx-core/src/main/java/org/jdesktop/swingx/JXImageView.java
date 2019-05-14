@@ -184,9 +184,9 @@ public class JXImageView extends JXPanel {
     }
     
     /**
-     * Gets the current image scale . When the scale is set to 1.0 
-     * then one image pixel = one screen pixel. When scale < 1.0 the draw image
-     * will be smaller than it's real size. When scale > 1.0 the drawn image will
+     * Gets the current image scale. When the scale is set to 1.0 
+     * then one image pixel = one screen pixel. When scale &lt; 1.0 the draw image
+     * will be smaller than it's real size. When scale &gt; 1.0 the drawn image will
      * be larger than it's real size. 1.0 is the default value.
      * @return the current image scale
      */
@@ -196,8 +196,8 @@ public class JXImageView extends JXPanel {
 
     /**
      * Sets the current image scale . When the scale is set to 1.0 
-     * then one image pixel = one screen pixel. When scale < 1.0 the draw image
-     * will be smaller than it's real size. When scale > 1.0 the drawn image will
+     * then one image pixel = one screen pixel. When scale &lt; 1.0 the draw image
+     * will be smaller than it's real size. When scale &gt; 1.0 the drawn image will
      * be larger than it's real size. 1.0 is the default value.
      * @param scale the new image scale
      */

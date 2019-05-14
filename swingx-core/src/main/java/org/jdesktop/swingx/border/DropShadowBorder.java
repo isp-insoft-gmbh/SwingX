@@ -363,7 +363,7 @@ public class DropShadowBorder implements Border, Serializable {
     }
     
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     @Override
     public Insets getBorderInsets(Component c) {

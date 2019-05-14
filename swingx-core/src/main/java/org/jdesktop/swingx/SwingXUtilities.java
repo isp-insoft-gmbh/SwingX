@@ -62,13 +62,13 @@ import org.jdesktop.swingx.painter.Painter;
 /**
  * A collection of utility methods for Swing(X) classes.
  * 
- * <ul>
  * PENDING JW: think about location of this class and/or its methods, Options:
- * 
- *  <li> move this class to the swingx utils package which already has a bunch of xxUtils
- *  <li> move methods between xxUtils classes as appropriate (one window/comp related util)
- *  <li> keep here in swingx (consistent with swingutilities in core)
+ * <ul>
+ *   <li>move this class to the swingx utils package which already has a bunch of xxUtils</li>
+ *   <li>move methods between xxUtils classes as appropriate (one window/comp related util)</li>
+ *   <li>keep here in swingx (consistent with swingutilities in core)</li>
  * </ul>
+ * 
  * @author Karl George Schaefer
  */
 public final class SwingXUtilities {
@@ -84,7 +84,7 @@ public final class SwingXUtilities {
      * <p>
      * TODO establish an interface for the mnemonic properties, such as {@code
      * MnemonicEnabled} and change signature to {@code public static <T extends
-     * JComponent & MnemonicEnabled> void updateMnemonicBinding(T c, String
+     * JComponent &amp; MnemonicEnabled> void updateMnemonicBinding(T c, String
      * pressed)}
      * 
      * @param c
@@ -107,7 +107,7 @@ public final class SwingXUtilities {
      * <p>
      * TODO establish an interface for the mnemonic properties, such as {@code
      * MnemonicEnabled} and change signature to {@code public static <T extends
-     * JComponent & MnemonicEnabled> void updateMnemonicBinding(T c, String
+     * JComponent &amp; MnemonicEnabled> void updateMnemonicBinding(T c, String
      * pressed, String released)}
      * 
      * @param c
@@ -521,7 +521,7 @@ public final class SwingXUtilities {
     /**
      * Updates lead and anchor selection index without changing the selection.
      * 
-     * Note: this is c&p'ed from SwingUtilities2 to not have any direct
+     * Note: this is c&amp;p'ed from SwingUtilities2 to not have any direct
      * dependency.
      * 
      * @param selectionModel the selection model to change lead/anchor

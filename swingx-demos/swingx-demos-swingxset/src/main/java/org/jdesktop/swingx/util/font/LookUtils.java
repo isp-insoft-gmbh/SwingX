@@ -322,7 +322,7 @@ public final class LookUtils {
 
     /**
      * Checks and answers whether the Windows XP style is enabled. 
-     * This method is intended to be called only if a Windows look&feel
+     * This method is intended to be called only if a Windows look&amp;feel
      * is about to be installed or already active in the UIManager.
      * The XP style of the Windows look&amp;feel is enabled by default on
      * Windows XP platforms since the J2SE 1.4.2; it can be disabled either 

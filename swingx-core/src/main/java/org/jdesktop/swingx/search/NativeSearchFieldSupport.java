@@ -13,7 +13,7 @@ import org.jdesktop.swingx.util.OS;
 /**
  * TODO: comment
  * 
- * @author Peter Weishapl <petw@gmx.net>
+ * @author Peter Weishapl &lt;petw@gmx.net&gt;
  */
 public class NativeSearchFieldSupport {
 	public static final String FIND_POPUP_PROPERTY = "JTextField.Search.FindPopup";

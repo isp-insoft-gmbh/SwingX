@@ -33,7 +33,7 @@ import org.jdesktop.swingx.plaf.TextUIWrapper;
  * @see JXTextArea
  * @see PromptTextUI
  * 
- * @author Peter Weishapl <petw@gmx.net>
+ * @author Peter Weishapl &lt;petw@gmx.net&gt;
  * @author Karl Schaefer
  */
 public final class PromptSupport {
@@ -100,7 +100,7 @@ public final class PromptSupport {
 	 * <p>
 	 * If <code>stayOnUIChange</code> is true, The prompt support will stay
 	 * installed, even when the text components UI changes. See
-	 * {@link #install(JTextComponent, boolean)}.
+	 * {@link TextUIWrapper#install(JTextComponent, boolean)}.
 	 * </p>
 	 * 
 	 * @param promptText
@@ -168,7 +168,7 @@ public final class PromptSupport {
 	 * prompt text.
 	 * </p>
 	 * <p>
-	 * Calls {@link #install(JTextComponent)} to ensure that the
+	 * Calls {@link TextUIWrapper#install(JTextComponent, boolean)} to ensure that the
 	 * <code>textComponent</code>s UI is wrapped by the appropriate
 	 * {@link PromptTextUI}.
 	 * </p>
@@ -239,7 +239,7 @@ public final class PromptSupport {
 	 * only be used when no text is present.
 	 * </p>
 	 * <p>
-	 * Calls {@link #install(JTextComponent)} to ensure that the
+	 * Calls {@link TextUIWrapper#install(JTextComponent, boolean)} to ensure that the
 	 * <code>textComponent</code>s UI is wrapped by the appropriate
 	 * {@link PromptTextUI}.
 	 * </p>
@@ -279,7 +279,7 @@ public final class PromptSupport {
 	 * only be used when no text is present.
 	 * </p>
 	 * <p>
-	 * Calls {@link #install(JTextComponent)} to ensure that the
+	 * Calls {@link TextUIWrapper#install(JTextComponent, boolean)} to ensure that the
 	 * <code>textComponent</code>s UI is wrapped by the appropriate
 	 * {@link PromptTextUI}.
 	 * </p>

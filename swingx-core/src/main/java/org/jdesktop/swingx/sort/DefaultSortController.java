@@ -38,7 +38,7 @@ import org.jdesktop.swingx.util.Contract;
  * SortControllers in SwingX.<p>
  * 
  * Additionally, this implementation contains a fix for core 
- * <a href=http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6894632>Issue 6894632</a>.
+ * <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6894632">Issue 6894632</a>.
  * It guarantees to only touch the underlying model during sort/filter and during 
  * processing the notification methods. This implies that the conversion and size query
  * methods are valid at all times outside the internal updates, including the critical 

@@ -53,7 +53,7 @@ public interface ColumnControlPopup extends UIDependent {
      * changes. 
      * 
      * @param o the componentOrientation to apply to all internal widgets.
-     * @see javax.swing.JComponent#applyComponentOrientation(ComponentOrientation).
+     * @see javax.swing.JComponent#applyComponentOrientation(ComponentOrientation)
      */
     void applyComponentOrientation(ComponentOrientation o);
 

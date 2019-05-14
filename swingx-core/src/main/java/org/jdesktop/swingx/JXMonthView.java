@@ -764,14 +764,14 @@ public class JXMonthView extends JComponent {
 
 //------------------- ui delegate    
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     public MonthViewUI getUI() {
         return (MonthViewUI)ui;
     }
 
     /**
-     * Sets the L&F object that renders this component.
+     * Sets the L&amp;F object that renders this component.
      *
      * @param ui UI to use for this {@code JXMonthView}
      */
@@ -791,7 +791,7 @@ public class JXMonthView extends JComponent {
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      */
     @Override
     public String getUIClassID() {
@@ -1617,7 +1617,7 @@ public class JXMonthView extends JComponent {
 
     /**
      * Sets the preferred number of columns of calendars. Does nothing if cols
-     * <= 0. The default value is 1.
+     * &lt;= 0. The default value is 1.
      * <p>
      * @param cols The number of columns of calendars.
      * 
@@ -1649,7 +1649,7 @@ public class JXMonthView extends JComponent {
 
     /**
      * Sets the preferred number of rows to paint calendars.Does nothing if rows
-     * <= 0. The default value is 1.
+     * &lt;= 0. The default value is 1.
      * <p>
      *
      * @param rows The number of rows of calendars.
@@ -1779,18 +1779,23 @@ public class JXMonthView extends JComponent {
     }
 
     /**
+     * <p>
      * Adds an ActionListener.
-     * <p/>
+     * </p>
+     * 
+     * <p>
      * The ActionListener will receive an ActionEvent with its actionCommand
      * set to COMMIT_KEY or CANCEL_KEY after the selection has been committed
      * or canceled, respectively.
-     * <p>
+     * </p>
      * 
+     * <p>
      * Note that actionEvents are typically fired after a dedicated user gesture 
      * to end an ongoing selectin (like ENTER, ESCAPE) or after explicit programmatic
      * commits/cancels. It is usually not fired after each change to the selection state.
      * Client code which wants to be notified about all selection changes should 
      * register a DateSelectionListener to the DateSelectionModel.
+     * </p>
      * 
      * @param l The ActionListener that is to be notified
      * 

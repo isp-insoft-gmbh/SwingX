@@ -1847,7 +1847,7 @@ public class JXDatePickerTest extends InteractiveTestCase {
     /**
      * Issue #551-swingX: editor value not updated after setMonthView.
      * 
-     * quick&dirty fix: let the picker manually update.
+     * quick&amp;dirty fix: let the picker manually update.
      *
      */
     @Test
@@ -1863,7 +1863,7 @@ public class JXDatePickerTest extends InteractiveTestCase {
     /**
      * Issue #551-swingx: editor value not updated after setEditor. 
      * 
-     * quick&dirty fix: let the picker manually update.
+     * quick&amp;dirty fix: let the picker manually update.
      * 
      * who should set it? ui-delegate when listening to editor property change?
      * or picker in setEditor?

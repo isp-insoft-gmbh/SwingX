@@ -118,15 +118,15 @@ import org.jdesktop.swingx.util.WindowUtils;
  *  will be queried for the password using the <code>get</code> method.
  *
  *  Example:
- *  <code><pre>
- *         final JXLoginPane panel = new JXLoginPane(new LoginService() {
- *                      public boolean authenticate(String name, char[] password,
- *                                      String server) throws Exception {
- *                              // perform authentication and return true on success.
- *                              return false;
- *                      }});
+ *  <pre><code>
+ *      final JXLoginPane panel = new JXLoginPane(new LoginService() {
+ *          public boolean authenticate(String name, char[] password,
+ *              String server) throws Exception {
+ *                  // perform authentication and return true on success.
+ *                      return false;
+ *              }});
  *      final JFrame frame = JXLoginPane.showLoginFrame(panel);
- * </pre></code>
+ * </code></pre>
  *
  * @author Bino George
  * @author Shai Almog
@@ -483,9 +483,9 @@ public class JXLoginPane extends JXPanel {
     }
 
     /**
-     * Sets the look and feel (L&F) object that renders this component.
+     * Sets the look and feel (L&amp;F) object that renders this component.
      *
-     * @param ui the LoginPaneUI L&F object
+     * @param ui the LoginPaneUI L&amp;F object
      * @see javax.swing.UIDefaults#getUI
      */
     public void setUI(LoginPaneUI ui) {
@@ -501,7 +501,7 @@ public class JXLoginPane extends JXPanel {
     }
 
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
+     * Notification from the <code>UIManager</code> that the L&amp;F has changed.
      * Replaces the current UI object with the latest version from the
      * <code>UIManager</code>.
      *
@@ -513,7 +513,7 @@ public class JXLoginPane extends JXPanel {
     }
 
     /**
-     * Returns the name of the L&F class that renders this component.
+     * Returns the name of the L&amp;F class that renders this component.
      *
      * @return the string {@link #uiClassID}
      * @see javax.swing.JComponent#getUIClassID

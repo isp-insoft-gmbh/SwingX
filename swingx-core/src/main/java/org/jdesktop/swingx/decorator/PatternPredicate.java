@@ -134,13 +134,13 @@ public class PatternPredicate implements HighlightPredicate {
     }
 
     /**
+     * {@inheritDoc}
      * 
-     * @inherited <p>
-     * 
+     * <p>
      * Implemented to return true if the match of cell content's String representation
      * against the Pattern if found and the adapter's view column maps to the 
      * decorateColumn/s. Otherwise returns false.
-     * 
+     * </p>
      */
     @Override
     public boolean isHighlighted(Component renderer, ComponentAdapter adapter) {

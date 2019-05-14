@@ -168,7 +168,7 @@ public class JXTreeTableUnitTest extends InteractiveTestCase {
     public static class FakeSortableTreeTable extends JXTreeTable {
 
         /** 
-         * @inherited <p>
+         * {@inheritDoc} <p>
          */
         @Override
         public void setAutoCreateRowSorter(boolean autoCreateRowSorter) {
@@ -176,7 +176,7 @@ public class JXTreeTableUnitTest extends InteractiveTestCase {
         }
 
         /** 
-         * @inherited <p>
+         * {@inheritDoc} <p>
          */
         @Override
         public void setRowSorter(RowSorter<? extends TableModel> sorter) {
@@ -184,7 +184,7 @@ public class JXTreeTableUnitTest extends InteractiveTestCase {
         }
 
         /** 
-         * @inherited <p>
+         * {@inheritDoc} <p>
          */
         @Override
         public void setSortable(boolean sortable) {

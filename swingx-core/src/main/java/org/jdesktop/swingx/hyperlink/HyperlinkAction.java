@@ -65,7 +65,7 @@ public class HyperlinkAction extends AbstractHyperlinkAction<URI> {
     /**
      * Creates and returns a HyperlinkAction with the given target and action type.
      * @param uri the target uri, maybe null.
-     * @param desktopAction the type of desktop action this class should perform, must be
+     * @param type the type of desktop action this class should perform, must be
      *    BROWSE or MAIL
      * @return a HyperlinkAction
      * @throws HeadlessException if {@link

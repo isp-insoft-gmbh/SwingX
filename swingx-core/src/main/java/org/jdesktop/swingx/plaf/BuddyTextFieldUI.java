@@ -14,7 +14,7 @@ import javax.swing.plaf.TextUI;
  * TODO: queries the text components layout manager for the preferred size.
  * </p>
  * 
- * @author Peter Weishapl <petw@gmx.net>
+ * @author Peter Weishapl &lt;petw@gmx.net&gt;
  * 
  */
 public class BuddyTextFieldUI extends PromptTextFieldUI {

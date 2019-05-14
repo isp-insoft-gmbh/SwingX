@@ -33,7 +33,7 @@ import org.jdesktop.swingx.util.Contract;
  * Factory of additional <code>RowFilter</code>s. <p>
  * 
  * Trigger is the missing of Pattern/Regex+matchflags factory method in core.
- * Can't do much other than c&p core as both abstract base class GeneralFilter and
+ * Can't do much other than c&amp;p core as both abstract base class GeneralFilter and
  * concrete RowFilter are private. Expose the base as public for custom subclasses
  * 
  * @author Jeanette Winzenburg
@@ -140,7 +140,7 @@ public class RowFilters {
     }
 
     /**
-     * C&P from core Swing to allow subclassing.
+     * C&amp;P from core Swing to allow subclassing.
      */
     public static abstract class GeneralFilter extends RowFilter<Object,Object> {
         private int[] columns;
@@ -177,7 +177,7 @@ public class RowFilters {
               Entry<? extends Object,? extends Object> value, int index);
         /**
          * Throws an IllegalArgumentException if any of the values in
-         * columns are < 0.
+         * columns are &lt; 0.
          */
         protected void checkIndices(int[] columns) {
             for (int i = columns.length - 1; i >= 0; i--) {
@@ -189,7 +189,7 @@ public class RowFilters {
     }
 
     /**
-     * C&P from core to allow richer factory methods.
+     * C&amp;P from core to allow richer factory methods.
      */
     private static class RegexFilter extends GeneralFilter {
         private Matcher matcher;

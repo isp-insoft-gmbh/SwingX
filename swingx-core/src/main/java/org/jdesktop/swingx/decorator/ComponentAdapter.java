@@ -90,7 +90,7 @@ import org.jdesktop.swingx.renderer.StringValues;
  * 
  * PENDING JW: anything to gain by generics here?<p>
  * PENDING JW: formally document that row/column coordinates must be valid in all methods taking
- *  model coordinates, that is 0<= row < getRowCount().
+ *  model coordinates, that is 0&lt;= row &lt; getRowCount().
  * 
  * @author Ramesh Gupta
  * @author Karl Schaefer
@@ -169,7 +169,7 @@ public abstract class ComponentAdapter {
      * 
      * @param columnIndex in model coordinates, must be valid.
      * @return the identifier of the column at columnIndex or null if it has none.
-     * @throws ArrayIndexOutOfBoundsException if columnIndex < 0 or columnIndex >= getColumnCount().
+     * @throws ArrayIndexOutOfBoundsException if columnIndex &lt; 0 or columnIndex &gt;= getColumnCount().
      *  
      *  
      * @see #getColumnIndex(Object)  
@@ -343,7 +343,7 @@ public abstract class ComponentAdapter {
      * Highlighters are interested in view values but might need to access
      * non-visible columns for testing. While it is possible to access 
      * row coordinates different from the current (that is this.row) it is not
-     * safe to do so for row > this.row because the adapter doesn't allow to
+     * safe to do so for row &gt; this.row because the adapter doesn't allow to
      * query the count of visible rows.<p>
      * 
      * This implementation messages the StringValue.TO_STRING with the filteredValue,
@@ -418,7 +418,7 @@ public abstract class ComponentAdapter {
      * Highlighters are interested in view values but might need to access
      * non-visible columns for testing. While it is possible to access 
      * row coordinates different from the current (that is this.row) it is not
-     * safe to do so for row > this.row because the adapter doesn't allow to
+     * safe to do so for row &gt; this.row because the adapter doesn't allow to
      * query the count of visible rows.
      * 
      * @param row the row of the cell in view coordinates

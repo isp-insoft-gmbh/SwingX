@@ -135,7 +135,7 @@ public class TreeTableCellEditor extends GenericEditor {
 
     /**
      * This is overriden to forward the event to the tree. This will
-     * return true if the click count >= clickCountToStart, or the event is null.
+     * return true if the click count &gt;= clickCountToStart, or the event is null.
      */
     @Override
     public boolean isCellEditable(EventObject e) {

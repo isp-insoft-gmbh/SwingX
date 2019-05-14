@@ -67,7 +67,7 @@ public class JAASLoginService extends LoginService {
         
     
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      *      
      */
     @Override

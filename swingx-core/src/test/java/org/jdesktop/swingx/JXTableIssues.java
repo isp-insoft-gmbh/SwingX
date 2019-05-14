@@ -299,7 +299,7 @@ public class JXTableIssues extends InteractiveTestCase {
         JTable table = new JTable(new AncientSwingTeam()) {
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public Dimension getPreferredScrollableViewportSize() {

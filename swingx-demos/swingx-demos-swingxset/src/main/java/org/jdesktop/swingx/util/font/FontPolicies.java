@@ -297,7 +297,7 @@ public final class FontPolicies {
     
 
     /**
-     * Implements the default font lookup for the Plastic L&f family
+     * Implements the default font lookup for the Plastic L&amp;f family
      * when running in a Windows environment.
      */
     private static final class DefaultPlasticOnWindowsPolicy implements FontPolicy {

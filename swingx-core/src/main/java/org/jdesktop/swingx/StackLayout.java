@@ -43,6 +43,7 @@ import java.util.List;
  * panel.add(new JLabel("On top"),    StackLayout.TOP);
  * panel.add(new JLabel("At bottom"), StackLayout.BOTTOM);
  * </pre>
+ * <p>
  * If you don't specify the constraint, the component will be added at the top
  * of the components stack.</p>
  * <p>All the components managed by this layout will be given the same size as
@@ -52,7 +53,7 @@ import java.util.List;
  * <p><code>StackLayout</code> works only with JSE 1.5 and Java SE 6 and
  * greater.</p>
  * 
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  */
 
 public class StackLayout implements LayoutManager2 {

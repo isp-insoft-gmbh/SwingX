@@ -969,7 +969,7 @@ public class RendererVisualCheck extends InteractiveTestCase {
         final JXList list = new JXList(model) {
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public boolean getScrollableTracksViewportWidth() {
@@ -1185,7 +1185,7 @@ public class RendererVisualCheck extends InteractiveTestCase {
             }
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public boolean isCellEditable(int row, int column) {
@@ -2078,7 +2078,7 @@ public class RendererVisualCheck extends InteractiveTestCase {
 
     
     /**
-     * c&p'd from JGoodies BeanUtils.
+     * c&amp;p'd from JGoodies BeanUtils.
      * 
      * Looks up and returns a <code>PropertyDescriptor</code> for the
      * given Java Bean class and property name using the standard 
@@ -2111,7 +2111,7 @@ public class RendererVisualCheck extends InteractiveTestCase {
     }
 
     /**
-     * c&p'd from JGoodies BeanUtils.
+     * c&amp;p'd from JGoodies BeanUtils.
      * 
      * Returns the value of the specified property of the given non-null bean.
      * This operation is unsupported if the bean property is read-only.<p>

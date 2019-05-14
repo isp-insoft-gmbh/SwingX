@@ -441,9 +441,6 @@ public class JXRootPane extends JRootPane {
      *
      * @param cancelButton the <code>JButton</code> which is to be the cancel button
      * @see #getCancelButton() 
-     *
-     * @beaninfo
-     *  description: The button activated by default for cancel actions in this root pane
      */
     public void setCancelButton(JButton cancelButton) { 
         JButton old = this.cancelButton;

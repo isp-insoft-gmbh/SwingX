@@ -1,5 +1,6 @@
 package org.jdesktop.swingx.plaf;
 
+import java.awt.TextComponent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
@@ -17,7 +18,7 @@ import org.jdesktop.swingx.prompt.BuddySupport;
 /**
  * TODO:
  * 
- * @author Peter Weishapl <petw@gmx.net>
+ * @author Peter Weishapl &lt;petw@gmx.net&gt;
  * 
  * @param <UI>
  */
@@ -53,7 +54,7 @@ public abstract class TextUIWrapper<UI extends TextUI> {
     }
 
     /**
-     * Wraps and replaces the text components current UI by calling {@link #wrapUI(TextUI)}, if the
+     * Wraps and replaces the text components current UI by calling {@link #wrapUI(JTextComponent)}, if the
      * text components current UI is not an instance of the given wrapper class.
      * 
      * @param textComponent
@@ -72,7 +73,8 @@ public abstract class TextUIWrapper<UI extends TextUI> {
     /**
      * Override to return the appropriate UI wrapper object for the given {@link TextUI}.
      * 
-     * @param textUI
+     * @param textComponent Component for which the wrapper will be created
+     * 
      * @return the wrapping UI
      */
     public abstract UI wrapUI(JTextComponent textComponent);

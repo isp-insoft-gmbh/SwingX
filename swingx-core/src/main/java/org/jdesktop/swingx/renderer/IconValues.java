@@ -62,7 +62,7 @@ public final class IconValues {
     };
     
     /**
-     * An {@code IconValue} that presents the current L&F icon for a given file.
+     * An {@code IconValue} that presents the current L&amp;F icon for a given file.
      * If the value passed to {@code FILE_ICON} is not a {@link File}, this has
      * the same effect as {@link IconValues#NONE}.
      */

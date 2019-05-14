@@ -273,7 +273,7 @@ public class DatePickerCellEditor extends AbstractCellEditor implements
      * 
      * @return the DatePicker's formats.
      * 
-     * @see org.jdesktop.swingx.JXDatePicker#getFormats().
+     * @see org.jdesktop.swingx.JXDatePicker#getFormats()
      */
     public DateFormat[] getFormats() {
         return datePicker.getFormats();

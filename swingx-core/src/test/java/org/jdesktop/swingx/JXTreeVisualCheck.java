@@ -420,7 +420,7 @@ public class JXTreeVisualCheck extends JXTreeUnitTest {
     }
 
     /**
-     * C&p from BasicTreeUI: adjust the depth to root/handle visibility.
+     * C&amp;p from BasicTreeUI: adjust the depth to root/handle visibility.
      * @param tree
      * @return
      */

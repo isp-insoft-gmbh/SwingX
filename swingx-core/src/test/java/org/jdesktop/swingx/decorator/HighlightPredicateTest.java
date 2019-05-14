@@ -1197,7 +1197,7 @@ public class HighlightPredicateTest extends InteractiveTestCase {
             }
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public Class<?> getColumnClass(int column) {

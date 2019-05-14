@@ -6,7 +6,7 @@
  * Copyright 2006 Sun Microsystems, Inc., 4150 Network Circle,
  * Santa Clara, California 95054, U.S.A. All rights reserved.
  *
- * Copyright (c) 2006 Romain Guy <romain.guy@mac.com>
+ * Copyright (c) 2006 Romain Guy &lt;romain.guy@mac.com&gt;
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -45,11 +45,15 @@ import org.jdesktop.swingx.image.StackBlurFilter;
 import org.jdesktop.swingx.util.GraphicsUtilities;
 
 /**
- * <p>A reflection renderer generates the reflection of a given picture. The
+ * <p>
+ * A reflection renderer generates the reflection of a given picture. The
  * result can be either the reflection itself, or an image containing both the
- * source image and its reflection.</p>
+ * source image and its reflection.
+ * </p>
  * <h2>Reflection Properties</h2>
- * <p>A reflection is defined by three properties:
+ * <p>
+ * A reflection is defined by three properties:
+ * </p>
  * <ul>
  *   <li><i>opacity</i>: the opacity of the reflection. You will usually
  *   change this valued according to the background color.</li>
@@ -74,26 +78,30 @@ import org.jdesktop.swingx.util.GraphicsUtilities;
  *   <li><i>opacity</i>: 35%</li>
  *   <li><i>length</i>: 40%</li>
  *   <li><i>blur enabled</i>: false</li>
- * </ul></p>
+ * </ul>
  * <h2>Generating Reflections</h2>
- * <p>A reflection is generated as a <code>BufferedImage</code> from another
+ * <p>
+ * A reflection is generated as a <code>BufferedImage</code> from another
  * <code>BufferedImage</code>. Once the renderer is set up, you must call
  * {@link #createReflection(java.awt.image.BufferedImage)} to actually generate
  * the reflection:
+ * </p>
  * <pre>
  * ReflectionRenderer renderer = new ReflectionRenderer();
  * // renderer setup
  * BufferedImage reflection = renderer.createReflection(bufferedImage);
- * </pre></p>
- * <p>The returned image contains only the reflection. You will have to append
+ * </pre>
+ * <p>
+ * The returned image contains only the reflection. You will have to append
  * it to the source image at painting time to get a realistic results. You can
  * also asks the rendered to return a picture composed of both the source image
  * and its reflection:
+ * </p>
  * <pre>
  * ReflectionRenderer renderer = new ReflectionRenderer();
  * // renderer setup
  * BufferedImage reflection = renderer.appendReflection(bufferedImage);
- * </pre></p>
+ * </pre>
  * <h2>Properties Changes</h2>
  * <p>This renderer allows to register property change listeners with
  * {@link #addPropertyChangeListener}. Listening to properties changes is very
@@ -103,7 +111,7 @@ import org.jdesktop.swingx.util.GraphicsUtilities;
  * <h2>Threading Issues</h2>
  * <p><code>ReflectionRenderer</code> is not guaranteed to be thread-safe.</p>
  *
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  */
 public class ReflectionRenderer {
     /**
@@ -135,14 +143,18 @@ public class ReflectionRenderer {
     private StackBlurFilter stackBlurFilter;
 
     /**
-     * <p>Creates a default good looking reflections generator.
+     * <p>
+     * Creates a default good looking reflections generator.
      * The default reflection renderer provides the following default values:
+     * </p>
      * <ul>
      *   <li><i>opacity</i>: 35%</li>
      *   <li><i>length</i>: 40%</li>
      *   <li><i>blurring</i>: disabled with a radius of 1 pixel</li>
-     * </ul></p>
-     * <p>These properties provide a regular, good looking reflection.</p>
+     * </ul>
+     * <p>
+     * These properties provide a regular, good looking reflection.
+     * </p>
      *
      * @see #getOpacity()
      * @see #setOpacity(float)
@@ -158,13 +170,15 @@ public class ReflectionRenderer {
     }
 
     /**
-     * <p>Creates a default good looking reflections generator with the
+     * <p>
+     * Creates a default good looking reflections generator with the
      * specified opacity. The default reflection renderer provides the following
      * default values:
+     * </p>
      * <ul>
      *   <li><i>length</i>: 40%</li>
      *   <li><i>blurring</i>: disabled with a radius of 1 pixel</li>
-     * </ul></p>
+     * </ul>
      *
      * @param opacity the opacity of the reflection, between 0.0 and 1.0
      * @see #getOpacity()

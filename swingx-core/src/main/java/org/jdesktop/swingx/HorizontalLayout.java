@@ -32,7 +32,7 @@ import org.jdesktop.swingx.util.Separator;
 /**
  * Organizes components in a horizontal layout.
  *
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  * @author Karl Schaefer
  */
 @JavaBean

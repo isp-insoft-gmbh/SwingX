@@ -94,16 +94,20 @@ import org.jdesktop.swingx.util.Contract;
  * {@link javax.swing.tree.TreeModel} interface to allow access to cell data by
  * column indices within each node of the tree hierarchy.</p>
  *
- * <p>The most straightforward way create and use a <code>JXTreeTable</code>, is to
+ * <p>
+ * The most straightforward way create and use a <code>JXTreeTable</code>, is to
  * first create a suitable data model for it, and pass that to a
  * <code>JXTreeTable</code> constructor, as shown below:
+ * </p>
  * <pre>
  *  TreeTableModel  treeTableModel = new FileSystemModel(); // any TreeTableModel
  *  JXTreeTable     treeTable = new JXTreeTable(treeTableModel);
  *  JScrollPane     scrollpane = new JScrollPane(treeTable);
  * </pre>
+ * <p>
  * See {@link javax.swing.JTable} for an explanation of why putting the treetable
- * inside a scroll pane is necessary.</p>
+ * inside a scroll pane is necessary.
+ * </p>
  *
  * <p>A single treetable model instance may be shared among more than one
  * <code>JXTreeTable</code> instances. To access the treetable model, always call
@@ -506,7 +510,7 @@ public class JXTreeTable extends JXTable {
      * Changes:
      * <ol>
      * <li>
-     * According to TreeTableHackerExt3, clickCounts > 1 are not sent to the
+     * According to TreeTableHackerExt3, clickCounts &gt; 1 are not sent to the
      * JTree so that double clicks will start edits (Issue #474). Well, mouse
      * events are only sent to the JTree if they occur within the tree handle
      * space - so that is not the behavior desired. Double clicks on the
@@ -942,7 +946,7 @@ public class JXTreeTable extends JXTable {
 
         /**
          * Here: returns true.
-         * @inheritDoc
+         * {@inheritDoc}
          */
         @Override
         protected boolean isHitDetectionFromProcessMouse() {
@@ -1077,11 +1081,11 @@ public class JXTreeTable extends JXTable {
          * Problem was not in the translation to renderer coordinate system,
          * it was in the method itself: the check whether we are "beyond" the
          * cell content box is bidi-dependent. Plus (since 1.6), width of
-         * renderer must be > 0.
+         * renderer must be &gt; 0.
          * 
          * 
          * @param column the column index under the event, if any.
-         * @param e the event which might trigger a expand/collapse.
+         * @param me the event which might trigger a expand/collapse.
          * @return the Point adjusted for bidi
          */
         protected Point getTreeMousePoint(int column, MouseEvent me) {
@@ -1095,7 +1099,7 @@ public class JXTreeTable extends JXTable {
      * to super, it dispatches less events to address open issues.<p>
      * 
      * Issue #474-swingx: double click should start edit (not expand/collapse)
-     *    changed mightBeExpansionTrigger to filter out clickCounts > 1
+     *    changed mightBeExpansionTrigger to filter out clickCounts &gt; 1
      * <p>   
      * Issue #875-swingx: cell selection mode
      *    changed the dispatch to do so only if mouse event outside content
@@ -1197,7 +1201,7 @@ public class JXTreeTable extends JXTable {
             return changedExpansion;
         }
         /**
-         * Overridden to exclude clickcounts > 1.
+         * Overridden to exclude clickcounts &gt; 1.
          */
         @Override
         protected boolean mightBeExpansionTrigger(EventObject e) {
@@ -2405,10 +2409,11 @@ public class JXTreeTable extends JXTable {
         }
         
         /**
+         * {@inheritDoc}
          * 
-         * @inherited <p>
-         * 
+         * <p>
          * Implemented to return the the underlying TreeTableModel. 
+         * </p>
          */
         @Override
         public TreeTableModel getTreeTableModel() {

@@ -31,17 +31,20 @@ import org.jdesktop.swingx.util.Contract;
 /**
  * DateSelectionModel which allows a single selection only. <p>
  * 
- * Temporary quick & dirty class to explore requirements as needed by
+ * <p>
+ * Temporary quick &amp; dirty class to explore requirements as needed by
  * a DatePicker. Need to define the states more exactly. Currently 
+ * </p>
  * 
- * <li> takes all Dates as-are (that is the normalized is the same as the given):
- * selected, unselectable, lower/upper bounds
- * <li> interprets any Date between the start/end of day of the selected as selected
- * <li> interprets any Date between the start/end of an unselectable date as unselectable
- * <li> interprets the lower/upper bounds as being the start/end of the given
- * dates, that is any Date after the start of day of the lower and before the end of
- * day of the upper is selectable.
- * 
+ * <ul>
+ *   <li>takes all Dates as-are (that is the normalized is the same as the given):
+ *   selected, unselectable, lower/upper bounds</li>
+ *   <li>interprets any Date between the start/end of day of the selected as selected</lI>
+ *   <li>interprets any Date between the start/end of an unselectable date as unselectable</li>
+ *   <li>interprets the lower/upper bounds as being the start/end of the given
+ *   dates, that is any Date after the start of day of the lower and before the end of
+ *   day of the upper is selectable.</li>
+ * </ul>
  * 
  * @author Jeanette Winzenburg
  */

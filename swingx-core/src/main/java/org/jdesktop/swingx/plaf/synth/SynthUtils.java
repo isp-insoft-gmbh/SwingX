@@ -53,7 +53,7 @@ public class SynthUtils {
     /**
      * Returns a SynthContext with the specified values. 
      *
-     * @param component JComponent
+     * @param c JComponent
      * @param region Identifies the portion of the JComponent
      * @param style Style associated with the component
      * @param state State of the component as defined in SynthConstants.
@@ -178,7 +178,7 @@ public class SynthUtils {
      * 
      * @param context must not be null
      * @param g must not be null
-     * @param the bounds to fill, may be null to indicate the complete size
+     * @param bounds the bounds to fill, may be null to indicate the complete size
      */
     public static void update(SynthContext context, Graphics g, Rectangle bounds) {
         JComponent c = context.getComponent();

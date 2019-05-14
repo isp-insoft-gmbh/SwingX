@@ -27,7 +27,7 @@ import org.jdesktop.beans.editors.Rectangle2DPropertyEditor;
 /**
  * Bean info for {@link org.jdesktop.swingx.JXGraph} component.
  *
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  */
 public class JXGraphBeanInfo extends BeanInfoSupport {
     public JXGraphBeanInfo() {

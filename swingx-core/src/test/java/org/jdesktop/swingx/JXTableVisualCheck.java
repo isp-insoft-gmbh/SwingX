@@ -204,7 +204,7 @@ public class JXTableVisualCheck extends JXTableUnitTest {
      * Issue #1535-swingx: GenericEditor fires editingStopped  even if 
      * value invalid (= empty). Leads to NPE in columnMoved (jdk7) or when
      * external code calls the stop/cancel sequence.
-     * Core issue but c&p'd to JXTable.
+     * Core issue but c&amp;p'd to JXTable.
      * 
      * 
      * 1. doesn't allow editing if the column type doesn't have a 
@@ -262,7 +262,7 @@ public class JXTableVisualCheck extends JXTableUnitTest {
         JScrollPane scrollPane = new JScrollPane(table) {
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public void updateUI() {
@@ -315,7 +315,7 @@ public class JXTableVisualCheck extends JXTableUnitTest {
         DefaultTableModel model = new DefaultTableModel(0, 3) {
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public Class<?> getColumnClass(int columnIndex) {
@@ -339,7 +339,7 @@ public class JXTableVisualCheck extends JXTableUnitTest {
         ColumnFactory factory = new ColumnFactory() {
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              */
             @Override
             public TableColumnExt createTableColumn(int modelIndex) {
@@ -399,7 +399,7 @@ public class JXTableVisualCheck extends JXTableUnitTest {
         public final static String SORT_ORDER_KEY = "columnExt.SortOrder";
 
         /**
-         * @inherited <p>
+         * {@inheritDoc} <p>
          */
         @Override
         public Object getHeaderValue() {

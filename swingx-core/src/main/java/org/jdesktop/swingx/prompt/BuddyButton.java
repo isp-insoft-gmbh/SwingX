@@ -13,7 +13,7 @@ import org.jdesktop.swingx.plaf.SearchFieldUI;
  * Non focusable, no border, no margin and insets button with no content area
  * filled.
  * 
- * @author Peter Weishapl <petw@gmx.net>
+ * @author Peter Weishapl &lt;petw@gmx.net&gt;
  * 
  */
 public class BuddyButton extends JButton {

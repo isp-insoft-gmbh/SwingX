@@ -175,7 +175,7 @@ public interface DateSelectionModel {
      * Adds the specified selection interval to the selection model.
      *
      * @param startDate interval start date, must not be null
-     * @param endDate   interval end date >= start date, must not be null
+     * @param endDate   interval end date &gt;= start date, must not be null
      * @throws NullPointerException if any of the dates is null
      */
     public void addSelectionInterval(Date startDate, Date endDate);
@@ -184,7 +184,7 @@ public interface DateSelectionModel {
      * Sest the specified selection interval to the selection model.
      *
      * @param startDate interval start date, must not be null
-     * @param endDate   interval end date >= start date, must not be null
+     * @param endDate   interval end date &gt;= start date, must not be null
      * @throws NullPointerException if any of the dates is null
      */
     public void setSelectionInterval(Date startDate, Date endDate);
@@ -195,7 +195,7 @@ public interface DateSelectionModel {
      * of type DATES_REMOVED.
      *
      * @param startDate interval start date, must not be null
-     * @param endDate   interval end date >= start date, must not be null
+     * @param endDate   interval end date &gt;= start date, must not be null
      * @throws NullPointerException if any of the dates is null
      */
     public void removeSelectionInterval(Date startDate, Date endDate);
@@ -282,7 +282,7 @@ public interface DateSelectionModel {
 
 
     /**
-     * Returns a <code>SortedSet</code> of <code>Date</codes>s that are unselectable.
+     * Returns a <code>SortedSet</code> of <code>Date</code>s that are unselectable.
      *
      * @return sorted set of dates
      */

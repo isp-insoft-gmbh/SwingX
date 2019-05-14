@@ -130,7 +130,7 @@ public class JXTitledPanel extends JXPanel {
     }
 
     /**
-     * Returns the look and feel (L&F) object that renders this component.
+     * Returns the look and feel (L&amp;F) object that renders this component.
      * 
      * @return the TitledPanelUI object that renders this component
      */
@@ -140,28 +140,23 @@ public class JXTitledPanel extends JXPanel {
     }
 
     /**
-     * Sets the look and feel (L&F) object that renders this component.
+     * Sets the look and feel (L&amp;F) object that renders this component.
      * 
      * @param ui
-     *            the TitledPanelUI L&F object
+     *            the TitledPanelUI L&amp;F object
      * @see javax.swing.UIDefaults#getUI
-     * @beaninfo bound: true
-     *          hidden: true attribute: visualUpdate true
-     *     description: The UI object that implements the Component's LookAndFeel.
      */
     public void setUI(TitledPanelUI ui) {
         super.setUI(ui);
     }
 
     /**
-     * Returns a string that specifies the name of the L&F class that renders
+     * Returns a string that specifies the name of the L&amp;F class that renders
      * this component.
      * 
      * @return "TitledPanelUI"
      * @see JComponent#getUIClassID
      * @see javax.swing.UIDefaults#getUI
-     * @beaninfo expert: true 
-     *      description: A string that specifies the name of the L&F class.
      */
     @Override
     public String getUIClassID() {
@@ -169,7 +164,7 @@ public class JXTitledPanel extends JXPanel {
     }
 
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
+     * Notification from the <code>UIManager</code> that the L&amp;F has changed.
      * Replaces the current UI object with the latest version from the
      * <code>UIManager</code>.
      * 

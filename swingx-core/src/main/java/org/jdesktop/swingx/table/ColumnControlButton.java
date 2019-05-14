@@ -84,15 +84,13 @@ import org.jdesktop.swingx.table.ColumnControlPopup.ActionGroupable;
  * Default support for adding table (configuration or other) <code>Action</code>s is 
  * informal, driven by convention: 
  * <ul>
- * <li> the JXTable's actionMap is scanned for candidate actions, the default marker
- *   is a key of type String which starts with {@link ColumnControlButton.COLUMN_CONTROL_MARKER} 
- * <li> the actions are sorted by that key and then handed over to the ColumnControlPopup
- *   for binding and addition of appropriate menu items
- * <li> the addition as such is control by additionalActionsVisible property, its 
- *   default value is true  
+ *   <li>the JXTable's actionMap is scanned for candidate actions, the default marker
+ *     is a key of type String which starts with {@link #COLUMN_CONTROL_MARKER}</li>
+ *   <li>the actions are sorted by that key and then handed over to the ColumnControlPopup
+ *     for binding and addition of appropriate menu items</li>
+ *   <li>the addition as such is control by additionalActionsVisible property, its 
+ *     default value is true</li>
  * </ul> 
- * 
- * 
  * 
  * @see TableColumnExt
  * @see TableColumnModelExt
@@ -484,7 +482,7 @@ public class ColumnControlButton extends JButton {
         }
 
         /** 
-         * @inheritDoc
+         * {@inheritDoc}
          * 
          */
         @Override
@@ -493,7 +491,7 @@ public class ColumnControlButton extends JButton {
         }
 
         /** 
-         * @inheritDoc
+         * {@inheritDoc}
          * 
          */
         @Override
@@ -516,7 +514,7 @@ public class ColumnControlButton extends JButton {
         }
 
         /** 
-         * @inheritDoc
+         * {@inheritDoc}
          * 
          */
         @Override
@@ -528,7 +526,7 @@ public class ColumnControlButton extends JButton {
         //-------------------- public methods to manipulate popup contents.
         
         /** 
-         * @inheritDoc
+         * {@inheritDoc}
          * 
          */
         @Override
@@ -538,7 +536,7 @@ public class ColumnControlButton extends JButton {
 
 
         /** 
-         * @inheritDoc
+         * {@inheritDoc}
          * 
          */
         @Override
@@ -550,7 +548,7 @@ public class ColumnControlButton extends JButton {
 
 
         /** 
-         * @inheritDoc
+         * {@inheritDoc}
          * 
          */
         @Override

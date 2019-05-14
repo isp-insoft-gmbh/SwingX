@@ -437,7 +437,7 @@ public class TableColumnExtTest extends TestCase {
     }
 
     /** 
-     * @inherited <p>
+     * {@inheritDoc} <p>
      */
     @Before
     @Override

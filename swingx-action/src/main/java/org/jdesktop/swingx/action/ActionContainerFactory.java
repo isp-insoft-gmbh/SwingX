@@ -45,28 +45,38 @@ import javax.swing.JToggleButton;
 import javax.swing.JToolBar;
 
 /**
+ * <p>
  * Creates user interface elements based on action ids and lists of action ids.
  * All action ids must represent actions managed by the ActionManager.
- * <p>
+ * </p>
+ *
  * <h3>Action Lists</h3>
+ * <p>
  * Use the createXXX(List) methods to construct containers of actions like menu 
  * bars, menus, popups and toolbars from actions represented as action ids in a 
  * <i>java.util.List</i>. Each element in the action-list can be one of 3 types:
+ * </p>
+ *
  * <ul>
- * <li>action id: corresponds to an action managed by the ActionManager
- * <li>null: indicates a separator should be inserted.
+ * <li>action id: corresponds to an action managed by the ActionManager</li>
+ * <li>null: indicates a separator should be inserted.</li>
  * <li>java.util.List: represents a submenu. See the note below which describes 
- * the configuration of menus. 
- * </li>
+ * the configuration of menus.</li>
+ * </ul>
+ *
  * The order of elements in an action-list determines the arrangement of the ui 
  * components which are constructed from the action-list.
+ * 
  * <p>
  * For a menu or submenu, the first element in the action-list represents a menu 
  * and subsequent elements represent menu items or separators (if null). 
+ * </p>
+ * 
  * <p>
  * This class can be used as a general component factory which will construct
  * components from Actions if the <code>create&lt;comp&gt;(Action,...)</code>
  * methods are used.
+ * </p>
  *
  * @see ActionManager
  */

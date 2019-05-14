@@ -82,7 +82,7 @@ public class LookAndFeelAddonsSandboxTest extends TestCase {
     /**
      * Fix issue #1578-swingx: remove dependency on core module.
      * 
-     * C&p'd from InteractiveTestCase: accessing that class here 
+     * C&amp;p'd from InteractiveTestCase: accessing that class here 
      * will break maven builds by introducing a cyclic dependency.
      * 
      * @param nameSnippet

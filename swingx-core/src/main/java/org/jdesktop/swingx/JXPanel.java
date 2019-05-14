@@ -70,6 +70,7 @@ import org.jdesktop.swingx.util.JVM;
  * </p>
  * <p>
  * A transparency example, this following code will show the black background of the parent:
+ * </p>
  * 
  * <pre>
  * JXPanel panel = new JXPanel();
@@ -80,20 +81,18 @@ import org.jdesktop.swingx.util.JVM;
  * container.add(panel);
  * </pre>
  * 
- * </p>
  * <h3>Painter Support</h3>
  * <p>
  * {@code JXPanel} has support for {@linkplain Painter}s.
  * </p>
  * <p>
  * A painter example, this following code will show how to add a simple painter:
+ * </p>
  * 
  * <pre>
  * JXPanel panel = new JXPanel();
  * panel.setBackgroundPainter(new PinstripePainter());
  * </pre>
- * 
- * </p>
  * 
  * @author rbair
  * @see Scrollable

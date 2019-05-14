@@ -128,6 +128,7 @@ import org.jdesktop.swingx.search.Searchable;
  * Creating a {@code JXEditorPane} is no different than creating a {@code
  * JEditorPane}. However, the following example demonstrates the best way to
  * access the improved command functionality.
+ * </p>
  * 
  * <pre>
  * JXEditorPane editorPane = new JXEditorPane("some URL");
@@ -137,7 +138,6 @@ import org.jdesktop.swingx.search.Searchable;
  * toolBar.add(editorPane.getParagraphSelector());
  * setToolBar(toolBar);
  * </pre>
- * </p>
  * 
  * @author Mark Davidson
  */
@@ -529,7 +529,7 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
     }
 
     /**
-     * The paste method has been overloaded to strip off the <html><body> tags
+     * The paste method has been overloaded to strip off the <code>&lt;html&gt;&lt;body&gt;</code> tags
      * This doesn't really work.
      */
     @Override

@@ -162,8 +162,6 @@ public class SynthXListUI extends BasicXListUI
 
     /**
      * Installs a SynthBorder from the current style, if ui-installable.
-     * 
-     * @param context the context 
      */
     protected void installSynthBorder() {
         if (SwingXUtilities.isUIInstallable(list.getBorder())) {

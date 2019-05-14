@@ -38,6 +38,7 @@ import java.util.logging.Logger;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
+ * <p>
  * <b>KeyChain</b> is a class that implements the "KeyChain" concept.
  * Fundamentally, it allows you to store multiple keys/credentials 
  * in a central password store. Access to this central store is
@@ -47,6 +48,7 @@ import javax.crypto.spec.SecretKeySpec;
  * can be any OutputStream and it can work in the webstart sandbox
  * using Muffins.
  * </p>
+ * 
  * <p>
  * To contstruct a <b>KeyChain</b>, you need to pass in an InputStream to the
  * store and it will initialize the KeyStore from the InputStream.

@@ -33,7 +33,7 @@ import java.util.Map;
  * extra work, though the display can can be further customized.
  * </p>
  * 
- * <h4>Simple Usage</h4>
+ * <b>Simple Usage</b>
  * 
  * <p>
  * The simplest usage is to wrap an <code>enum</code> inside the
@@ -52,7 +52,7 @@ import java.util.Map;
  *  combo.setModel(new EnumComboBoxModel(MyEnum.class));
  * </code></pre>
  * 
- * <h4>Type safe access</h4>
+ * <b>Type safe access</b>
  * <p>
  * By using generics and co-variant types you can make accessing elements from
  * the model be completely typesafe. ex:
@@ -67,7 +67,7 @@ import java.util.Map;
  * MyEnum selected = enumModel.getSelectedItem();
  * </code></pre>
  * 
- * <h4>Advanced Usage</h4>
+ * <b>Advanced Usage</b>
  * <p>
  * Since the exact <code>toString()</code> value of each enum constant may not
  * be exactly what you want on screen (the values won't have spaces, for

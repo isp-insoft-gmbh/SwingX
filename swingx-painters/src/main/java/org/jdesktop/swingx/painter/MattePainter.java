@@ -30,24 +30,30 @@ import java.awt.Shape;
 import org.jdesktop.beans.JavaBean;
 
 /**
+ * <p>
  * A Painter implementation that uses a Paint to fill the entire background
  * area. For example, if I wanted to paint the entire background of a panel green, I would:
+ * </p>
+ *
  * <pre><code>
- *  MattePainter p = new MattePainter(Color.GREEN);
- *  panel.setBackgroundPainter(p);
- * </code></pre></p>
+ * MattePainter p = new MattePainter(Color.GREEN);
+ * panel.setBackgroundPainter(p);
+ * </code></pre>
  * 
  * <p>Since it accepts a Paint, it is also possible to paint a texture or use other
  * more exotic Paint implementations. To paint a BufferedImage texture as the
  * background:
+ * </p>
+ *
  * <pre><code>
- *  TexturePaint paint = new TexturePaint(bufferedImage,
- *      new Rectangle2D.Double(0, 0, bufferedImage.getWidth(), bufferedImage.getHeight()));
- *  MattePainter p = new MattePainter(paint);
- *  panel.setBackgroundPainter(p);
- * </code></pre></p>
- * 
+ * TexturePaint paint = new TexturePaint(bufferedImage,
+ *     new Rectangle2D.Double(0, 0, bufferedImage.getWidth(), bufferedImage.getHeight()));
+ * MattePainter p = new MattePainter(paint);
+ * panel.setBackgroundPainter(p);
+ * </code></pre>
+ *
  * <p>If no paint is specified, then nothing is painted</p>
+ *
  * @author rbair
  */
 @JavaBean

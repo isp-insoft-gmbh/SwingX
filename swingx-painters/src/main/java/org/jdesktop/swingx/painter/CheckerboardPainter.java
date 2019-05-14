@@ -35,6 +35,8 @@ import org.jdesktop.swingx.util.PaintUtils;
  * 
  * <p>To configure a checkerboard pattern that used a gradient for the dark
  * tiles and Color.WHITE for the light tiles, you could:
+ * </p>
+ *
  * <pre><code>
  *  GradientPaint gp = new GradientPaint(
  *      new Point2D.Double(0, 0),
@@ -46,7 +48,7 @@ import org.jdesktop.swingx.util.PaintUtils;
  *  p.setLightPaint(Color.WHITE);
  *  p.setSquareSize(32);
  *  panel.seBackgroundPainter(p);
- * </code></pre></p>
+ * </code></pre>
  * 
  * <p>Note that in this example, the "32" in the GradientPaint matches the "32"
  * set for the squareSize. This is necessary because GradientPaints don't
@@ -99,10 +101,11 @@ public class CheckerboardPainter extends AbstractPainter<Object> {
     
     
     /**
-     * Specifies the squareSize of the squares. By default, it is 8. A squareSize of <=
-     * 0 will cause an IllegalArgumentException to be thrown.
+     * Specifies the squareSize of the squares. By default, it is 8. A
+     * squareSize of &lt;= 0 will cause an IllegalArgumentException to
+     * be thrown.
      * 
-     * @param squareSize the squareSize of one side of a square tile. Must be > 0.
+     * @param squareSize the squareSize of one side of a square tile. Must be &gt; 0.
      */
     public void setSquareSize(double squareSize) {
         if (squareSize <= 0) {
@@ -119,7 +122,7 @@ public class CheckerboardPainter extends AbstractPainter<Object> {
     /**
      * Gets the current square length.
      * 
-     * @return the squareSize. Will be > 0
+     * @return the squareSize. Will be &gt; 0
      */
     public double getSquareSize() {
         return squareSize;

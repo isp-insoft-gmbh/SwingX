@@ -278,7 +278,7 @@ public class ServerAction extends AbstractAction {
 
     /**
      * Retrieves a string which represents the parameter data for a server action.
-     * @return a string of name value pairs prefixed by a '?' and delimited by an '&'
+     * @return a string of name value pairs prefixed by a '?' and delimited by an '&amp;'
      */
     private String getPostData() {
         // Write the data into local buffer

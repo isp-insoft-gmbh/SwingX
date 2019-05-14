@@ -64,6 +64,7 @@ import org.jdesktop.swingx.plaf.LookAndFeelAddons;
  * 
  * <p>These static showXXX methods all follow the same pattern, namely (
  * where XXX could be one of Dialog, Frame, or InternalFrame):
+ * </p>
  * <ul>
  *  <li><b>showXXX(Throwable e)</b>: This usage allows you to show a default error
  *      window, detailing the error</li>
@@ -78,23 +79,29 @@ import org.jdesktop.swingx.plaf.LookAndFeelAddons;
  *      a dialog for presenting the given <code>JXErrorPane</code>, but does not
  *      show it. This allows the developer to modify properties of the dialog
  *      prior to display</li>
- * </ul></p>
+ * </ul>
  * 
  * <p>Following are some examples and further discussion regarding some of these
  * static methods. Example of the most basic usage:
+ * </p>
+ * 
  * <pre><code>
  *      try {
  *          //do stuff.... something throws an exception in here
  *      } catch (Exception e) {
  *          JXErrorPane.showDialog(e);
  *      }
- * </code></pre>. Alternatively there are <code>showFrame</code> and
+ * </code></pre>
+ * 
+ * Alternatively there are <code>showFrame</code> and
  * <code>showInternalFrame</code> variants of each of the <code>showDialog</code>
- * methods described in this API.</p>
+ * methods described in this API.
  *
- * <p>While this is the simplest usage, it is not the recommended approach for
+ * <p>
+ * While this is the simplest usage, it is not the recommended approach for
  * most errors since it yields the most difficult messages for users to understand.
  * Instead it is recommended to provide a more useful message for users. For example:
+ * </p>
  * <pre><code>
  *      URL url = null;
  *      try {
@@ -110,18 +117,20 @@ import org.jdesktop.swingx.plaf.LookAndFeelAddons;
  *          JXErrorPane.showDialog(myWindow, "Unknown Resource", msg, details, e);
  *          return false;
  *      }
- * </code></pre></p>
+ * </code></pre>
  * 
- * <p>Before showing the <code>JXErrorPane</code> in a frame or dialog, you may modify
+ * <p>
+ * Before showing the <code>JXErrorPane</code> in a frame or dialog, you may modify
  * the appearance and behavior of the <code>JXErrorPane</code> by setting one or more of its bean
  * properties. For example, to modify the icon shown with a particular
  * instance of a <code>JXErrorPane</code>, you might do the following:
+ * </p>
  * <pre><code>
  *      JXErrorPane pane = new JXErrorPane();
  *      pane.setErrorIcon(myErrorIcon);
  *      pane.setErrorInfo(new ErrorInfo("Fatal Error", exception));
  *      JXErrorPane.showDialog(null, pane);
- * </code></pre></p>
+ * </code></pre>
  *
  * <p><code>JXErrorPane</code> may also be configured with a "Report" button which allows
  * the user to send a bug report, typically through email. This is done through
@@ -222,7 +231,7 @@ public class JXErrorPane extends JComponent {
     //------------------------------------------------------------- UI Logic
     
     /**
-     * Returns the look and feel (L&F) object that renders this component.
+     * Returns the look and feel (L&amp;F) object that renders this component.
      *
      * @return the {@link ErrorPaneUI} object that renders this component
      */
@@ -231,21 +240,18 @@ public class JXErrorPane extends JComponent {
     }
 
     /**
-     * Sets the look and feel (L&F) object that renders this component.
+     * Sets the look and feel (L&amp;F) object that renders this component.
      * 
      * @param ui
-     *            the ErrorPaneUI L&F object
+     *            the ErrorPaneUI L&amp;F object
      * @see javax.swing.UIDefaults#getUI
-     * @beaninfo bound: true hidden: true attribute: visualUpdate true
-     *           description: The UI object that implements the Component's
-     *           LookAndFeel.
      */
     public void setUI(ErrorPaneUI ui) {
         super.setUI(ui);
     }
 
     /**
-     * Returns the name of the L&F class that renders this component.
+     * Returns the name of the L&amp;F class that renders this component.
      *
      * @return the string {@link #uiClassID}
      * @see javax.swing.JComponent#getUIClassID
@@ -257,7 +263,7 @@ public class JXErrorPane extends JComponent {
     }
 
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
+     * Notification from the <code>UIManager</code> that the L&amp;F has changed.
      * Replaces the current UI object with the latest version from the
      * <code>UIManager</code>.
      * 

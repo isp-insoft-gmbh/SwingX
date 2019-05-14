@@ -68,17 +68,16 @@ import org.jdesktop.swingx.table.TableColumnExt;
  * <h2> Extended functionality </h2>
  * 
  * <ul>
- * <li> Listens to TableColumn propertyChanges to update itself accordingly.
- * <li> Supports per-column header ToolTips. 
- * <li> Guarantees reasonable minimal height > 0 for header preferred height.
-* </ul>
+ *   <li>Listens to TableColumn propertyChanges to update itself accordingly.</li>
+ *   <li>Supports per-column header ToolTips.</li>
+ *   <li>Guarantees reasonable minimal height &gt; 0 for header preferred height.</li>
+ * </ul>
  * 
  * 
  * @author Jeanette Winzenburg
  * 
  * @see JXTable#toggleSortOrder(int)
  * @see JXTable#resetSortOrder()
- * @see SortGestureRecognizer
  */
 public class JXTableHeader extends JTableHeader 
     implements TableColumnModelExtListener {
@@ -378,7 +377,7 @@ public class JXTableHeader extends JTableHeader
      * if the first column has no text. 
      * 
      * @see #getPreferredSize(Dimension)
-     * @see #getMinimumHeight(int).
+     * @see #getMinimumHeight(int)
      * 
      */
     @Override
@@ -442,7 +441,7 @@ public class JXTableHeader extends JTableHeader
     
 
     /**
-     * @inherited <p>
+     * {@inheritDoc} <p>
      * 
      * Overridden to fire a propertyChange for draggedColumn. 
      */
@@ -456,7 +455,7 @@ public class JXTableHeader extends JTableHeader
 
     
     /**
-     * @inherited <p>
+     * {@inheritDoc} <p>
      * 
      * Overridden to fire a propertyChange for resizingColumn. 
      */

@@ -42,6 +42,8 @@ import org.jdesktop.beans.JavaBean;
  * <p>For example, if I want to create a CompoundPainter that started with a blue
  * background, had pinstripes on it running at a 45 degree angle, and those
  * pinstripes appeared to "fade in" from left to right, I would write the following:
+ * </p>
+ *
  * <pre><code>
  *  Color blue = new Color(0x417DDD);
  *  Color translucent = new Color(blue.getRed(), blue.getGreen(), blue.getBlue(), 0);
@@ -58,7 +60,7 @@ import org.jdesktop.beans.JavaBean;
  *  Painter backgroundPainter = new RectanglePainter(this.getBackground(), null);
  *  Painter p = new CompoundPainter(backgroundPainter, pinstripes, veil);
  *  panel.setBackgroundPainter(p);
- * </code></pre></p>
+ * </code></pre>
  *
  * @author rbair
  */
@@ -244,13 +246,12 @@ public class CompoundPainter<T> extends AbstractPainter<T> {
      * should be checked for their <code>dirty</code> flag as part of
      * processing.<br>
      * Default value is: <code>true</code><br>
-     * This should be set to </code>false</code> if the cacheable state
-     * of the child <code>Painter</code>s are different from each other.  This
+     * This should be set to <code>false</code> if the cacheable state
+     * of the child <code>Painter</code>s are different from each other. This
      * will allow the cacheable == <code>true</code> <code>Painter</code>s to
      * keep their cached image during regular repaints.  In this case,
      * client code should call {@link #clearCache()} manually when the cacheable
      * <code>Painter</code>s should be updated.
-     *
      *
      * @see #isDirty()
      */

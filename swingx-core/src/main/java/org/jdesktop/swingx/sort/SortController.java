@@ -27,30 +27,33 @@ import javax.swing.RowFilter;
 import javax.swing.SortOrder;
 
 /**
+ * <p>
  * Defines the interactive sort control for sortable collection components (like 
  * JXList, JXTable). All sort gesture requests from their sort api 
  * are routed through the SortController.
- * <p>
+ * </p>
  * 
+ * <p>
  * This is very-much work-in-progress: while moving from ol' SwingX sorting to 
  * core jdk6 sorting we need a hook for sorting api on the view. So in terms of
- * jdk6 classes, this is something like:<p>
+ * jdk6 classes, this is something like:
+ * </p>
  * 
- * <code><pre>
+ * <pre><code>
  * SortController == DefaultRowSorter - RowSorter + XX
- * </pre></code>
+ * </code></pre>
+ * 
  * All methods which change sort state must respect per-controller and per-column 
  * sortable property, as follows
+ * 
  * <ol>
- * <li> if per-controller sortable is false, do nothing
- * <li> if per-controller sortable is true, if per-column sortable is false, do nothing
- * <li> if both are true toggle the SortOrder of the given column
+ *   <li>if per-controller sortable is false, do nothing</li>
+ *   <li>if per-controller sortable is true, if per-column sortable is false, do nothing</li>
+ *   <li>if both are true toggle the SortOrder of the given column</li>
  * </ol>
  *
- * 
- *  @author <a href="mailto:jesse@swank.ca">Jesse Wilson</a>
- *  @author Jeanette Winzenburg
- * 
+ * @author <a href="mailto:jesse@swank.ca">Jesse Wilson</a>
+ * @author Jeanette Winzenburg
  */
 public interface SortController<M> {
 

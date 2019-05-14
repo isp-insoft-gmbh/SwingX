@@ -51,7 +51,7 @@ import org.jdesktop.swingx.search.RecentSearches;
  * search should be cancelled, when the command text is empty or null.
  * 
  * @see RecentSearches
- * @author Peter Weishapl <petw@gmx.net>
+ * @author Peter Weishapl &lt;petw@gmx.net&gt;
  * 
  */
 @JavaBean
@@ -264,7 +264,7 @@ public class JXSearchField extends JXTextField {
 	 * Get the instant search delay in milliseconds. The default delay is 50
 	 * Milliseconds.
 	 * 
-	 * @see {@link #setInstantSearchDelay(int)}
+	 * @see #setInstantSearchDelay(int)
 	 * @return the instant search delay in milliseconds
 	 */
 	public int getInstantSearchDelay() {
@@ -423,8 +423,6 @@ public class JXSearchField extends JXTextField {
 	/**
 	 * Sets the action that is invoked when the enter key is pressed or the find
 	 * button is clicked.
-	 * 
-	 * @return the find action
 	 */
 	public final void setFindAction(ActionListener findAction) {
 		NativeSearchFieldSupport.setFindAction(this, findAction);
@@ -453,18 +451,13 @@ public class JXSearchField extends JXTextField {
 	}
 
 	/**
-	 * Creates and returns the find button. The buttons action is set to the
-	 * action returned by {@link #getSearchAction()}.
-	 * 
-	 * Override to use a custom find button.
+	 * Creates and returns the find button. Override to use a custom find button.
 	 * 
 	 * @see #getFindButton()
 	 * @return the find button
 	 */
 	protected JButton createFindButton() {
-		BuddyButton btn = new BuddyButton();
-
-		return btn;
+		return new BuddyButton();
 	}
 
 	/**

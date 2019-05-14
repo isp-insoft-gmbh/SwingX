@@ -81,7 +81,7 @@ public class IconBorderTest extends InteractiveTestCase {
 
         /**
          * 
-         * @inherited <p>
+         * {@inheritDoc} <p>
          * 
          * Here's the mis-behaviour: returns null
          */
@@ -91,7 +91,7 @@ public class IconBorderTest extends InteractiveTestCase {
         }
 
         /** 
-         * @inherited <p>
+         * {@inheritDoc} <p>
          */
         @Override
         public Insets getBorderInsets(Component c, Insets insets) {

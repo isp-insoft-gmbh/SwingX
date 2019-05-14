@@ -294,7 +294,7 @@ public class TitledPanelDemo extends JXPanel {
         titledPanel = new JXTitledPanel() {
 
             /** 
-             * @inherited <p>
+             * {@inheritDoc} <p>
              * 
              * Overridden to adjust to size requirements of invisible cards.
              */
