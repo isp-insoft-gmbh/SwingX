@@ -57,7 +57,7 @@ public class HyperlinkActionTest extends TestCase {
             LOG.fine("cannot run ui test - headless environment");
             return;
         }
-        URI uri = new URI("http://someserver.de");
+        URI uri = new URI("http://127.0.0.1");
         HyperlinkAction action = HyperlinkAction.createHyperlinkAction(uri);
         action.actionPerformed(null);
         assertEquals(true, action.isVisited());
