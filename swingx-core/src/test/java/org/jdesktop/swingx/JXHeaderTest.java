@@ -38,6 +38,8 @@ import javax.swing.plaf.IconUIResource;
 import junit.framework.TestCase;
 
 import org.jdesktop.swingx.test.XTestUtils;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -61,6 +63,15 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class JXHeaderTest extends TestCase {
 
+   /**
+    * Touch JXHeader to init UI defaults.
+    */
+    @BeforeClass
+    public static void setup() {
+      System.out.println( "Setup" );
+      new JXHeader();
+    }
+  
 //---------------- testing icon property, similar to #925
 // except that it's not a property normally controlled by the ui defaults.
     
@@ -71,12 +82,13 @@ public class JXHeaderTest extends TestCase {
     public void testIconDefaultA() {
         Icon icon = XTestUtils.loadDefaultIcon();
         assertNotNull("sanity: default icon loaded", icon);
+        Icon prevDefault = UIManager.getIcon("Header.defaultIcon");
         UIManager.put("Header.defaultIcon", icon);
         JXHeader header = new JXHeader();
         try {
             assertSame(icon, header.getIcon());
         } finally {
-            UIManager.put("Header.defaultIcon", null);
+            UIManager.put("Header.defaultIcon", prevDefault);
         }
     }
 
@@ -88,12 +100,13 @@ public class JXHeaderTest extends TestCase {
     public void testIconLabelDefaultB() {
         Icon icon = XTestUtils.loadDefaultIcon();
         assertNotNull("sanity: default icon loaded", icon);
+        Icon prevDefault = UIManager.getIcon("Header.defaultIcon");
         UIManager.put("Header.defaultIcon", icon);
         JXHeader header = new JXHeader();
         try {
             assertSame(icon, getIconLabel(header).getIcon());
         } finally {
-            UIManager.put("Header.defaultIcon", null);
+            UIManager.put("Header.defaultIcon", prevDefault);
         }
     }
 
@@ -194,6 +207,7 @@ public class JXHeaderTest extends TestCase {
     @Test
     public void testUpdateUIDefaultDescriptionLabelFontD() {
         Font uiDefault = new FontUIResource("serif", Font.PLAIN, 36);
+        Font prevDefault = UIManager.getFont("JXHeader.descriptionFont");
         UIManager.put("JXHeader.descriptionFont", uiDefault);
         Font color = new FontUIResource("serif", Font.ITALIC, 20);
         JXHeader header = new JXHeader();
@@ -207,7 +221,7 @@ public class JXHeaderTest extends TestCase {
             assertEquals(uiDefault, getDescriptionLabel(header).getFont());
         } finally {
             // reset custom property
-           UIManager.put("JXHeader.descriptionFont", null);   
+           UIManager.put("JXHeader.descriptionFont", prevDefault);   
         }
     }
 
@@ -261,6 +275,7 @@ public class JXHeaderTest extends TestCase {
     @Test
     public void testUpdateUIDefaultDescriptionLabelForegroundD() {
         Color uiDefault = new ColorUIResource(Color.BLUE);
+        Color prevDefault = UIManager.getColor("JXHeader.descriptionForeground");
         UIManager.put("JXHeader.descriptionForeground", uiDefault);
         Color color = new ColorUIResource(Color.PINK);
         JXHeader header = new JXHeader();
@@ -272,7 +287,7 @@ public class JXHeaderTest extends TestCase {
             assertEquals(uiDefault, getDescriptionLabel(header).getForeground());
         } finally {
             // reset custom property
-           UIManager.put("JXHeader.descriptionForeground", null);   
+           UIManager.put("JXHeader.descriptionForeground", prevDefault);   
         }
     }
 
@@ -324,6 +339,7 @@ public class JXHeaderTest extends TestCase {
     @Test
     public void testUpdateUIDefaultTitleLabelForegroundD() {
         Color uiDefault = new ColorUIResource(Color.BLUE);
+        Color prevDefault = UIManager.getColor("JXHeader.titleForeground");
         UIManager.put("JXHeader.titleForeground", uiDefault);
         Color color = new ColorUIResource(Color.PINK);
         JXHeader header = new JXHeader();
@@ -335,7 +351,7 @@ public class JXHeaderTest extends TestCase {
             assertEquals(uiDefault, getTitleLabel(header).getForeground());
         } finally {
             // reset custom property
-           UIManager.put("JXHeader.titleForeground", null);   
+           UIManager.put("JXHeader.titleForeground", prevDefault);   
         }
     }
 
@@ -388,6 +404,7 @@ public class JXHeaderTest extends TestCase {
     @Test
     public void testUpdateUIDefaultTitleLabelFontD() {
         Font uiDefault = new FontUIResource("serif", Font.PLAIN, 36);
+        Font prevDefault = UIManager.getFont("JXHeader.titleFont");
         UIManager.put("JXHeader.titleFont", uiDefault);
         Font color = new FontUIResource("serif", Font.ITALIC, 20);
         JXHeader header = new JXHeader();
@@ -401,7 +418,7 @@ public class JXHeaderTest extends TestCase {
             assertEquals(uiDefault, getTitleLabel(header).getFont());
         } finally {
             // reset custom property
-           UIManager.put("JXHeader.titleFont", null);   
+           UIManager.put("JXHeader.titleFont", prevDefault);   
         }
     }
 
