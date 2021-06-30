@@ -1929,8 +1929,23 @@ public class BasicMonthViewUI extends MonthViewUI {
                 endDate = selected;
             } else if (pivotDate != null) {
                 if (selected.before(pivotDate)) {
-                    startDate = selected;
-                    endDate = pivotDate;
+                    final Point gridPos = getDayGridPositionAtLocation(e.getX(), e.getY());
+                    //Workaround to make sure dragging from top to bottom and bottom to
+                    //top on the week header yields the same results.
+                    if (gridPos.x == WEEK_HEADER_COLUMN) {                    
+                        final Calendar tempDate = Calendar.getInstance();
+                        
+                        tempDate.setTime( selected );
+                        tempDate.set( Calendar.DAY_OF_WEEK, Calendar.MONDAY );
+                        startDate = tempDate.getTime();
+                        
+                        tempDate.setTime( pivotDate );
+                        tempDate.set( Calendar.DAY_OF_WEEK, Calendar.SUNDAY );
+                        endDate = tempDate.getTime();
+                    } else {
+                        startDate = selected;
+                        endDate = pivotDate;
+                    }
                 } else if (selected.after(pivotDate)) {
                     startDate = pivotDate;
                     endDate = selected;
