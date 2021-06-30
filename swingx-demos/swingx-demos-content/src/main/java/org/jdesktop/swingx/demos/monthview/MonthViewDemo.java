@@ -323,6 +323,11 @@ public class MonthViewDemo extends JPanel {
 
     private void createMonthViewDemo() {
         monthView = new JXMonthView();
+        monthView.setSelectionMode( SelectionMode.MULTIPLE_INTERVAL_SELECTION );
+        monthView.setShowingLeadingDays( true );
+        monthView.setShowingTrailingDays( true );
+        monthView.setShowingWeekNumber( true );
+        monthView.setTraversable( true );
         monthView.setName("monthView");
         
         // add to container which doesn't grow the size beyond the pref
