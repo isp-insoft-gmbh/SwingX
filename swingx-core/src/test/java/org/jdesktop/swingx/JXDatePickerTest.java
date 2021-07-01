@@ -20,6 +20,8 @@
  */
 package org.jdesktop.swingx;
 
+import static org.junit.Assert.assertNotEquals;
+
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -1569,12 +1571,15 @@ public class JXDatePickerTest extends InteractiveTestCase {
     public void testDatePropertyThroughCommit() throws ParseException {
         JXDatePicker picker = new JXDatePicker(new Date());
         Date initialDate = picker.getDate();
+        LOG.info("Initial picker date: " + initialDate);
         String text = picker.getEditor().getText();
         Format[] formats = picker.getFormats();
         assertEquals(picker.getDate(), formats[0].parseObject(text));
         // manipulate the text, not entirely safe ...
         String changed = text.replace('0', '1');
+        LOG.info("Changed date text: " + changed);
         picker.getEditor().setText(changed);
+        LOG.info("Date after setText: " + picker.getDate());
         Date date;
         try {
             date = (Date) formats[0].parseObject(changed);
@@ -1583,7 +1588,7 @@ public class JXDatePickerTest extends InteractiveTestCase {
             return;
         }
         // sanity ...
-        assertFalse("", date.equals(picker.getDate()));
+        assertNotEquals(date, picker.getDate());
         PropertyChangeReport report = new PropertyChangeReport();
         picker.addPropertyChangeListener("date", report);
         picker.commitEdit();
@@ -1598,12 +1603,15 @@ public class JXDatePickerTest extends InteractiveTestCase {
     @Test
     public void testSynchAllAfterCommit() throws ParseException {
         JXDatePicker picker = new JXDatePicker(new Date());
+        LOG.info("Initial picker date: " + picker.getDate());
         String text = picker.getEditor().getText();
         Format[] formats = picker.getFormats();
         assertEquals(picker.getDate(), formats[0].parseObject(text));
         // manipulate the text, not entirely safe ...
         String changed = text.replace('0', '1');
+        LOG.info("Changed date text: " + changed);
         picker.getEditor().setText(changed);
+        LOG.info("Date after setText: " + picker.getDate());
         Date date;
         try {
             date = (Date) formats[0].parseObject(changed);
@@ -1612,7 +1620,7 @@ public class JXDatePickerTest extends InteractiveTestCase {
             return;
         }
         // sanity ...
-        assertFalse("", date.equals(picker.getDate()));
+        assertNotEquals(date, picker.getDate());
         picker.commitEdit();
         assertSynchAll(picker, date);
     }
