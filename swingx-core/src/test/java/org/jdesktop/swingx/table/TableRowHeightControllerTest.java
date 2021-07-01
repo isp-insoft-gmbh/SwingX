@@ -225,7 +225,8 @@ public class TableRowHeightControllerTest extends InteractiveTestCase {
             public void run() {
                 assertEquals("new model must be installed", true, containsModelListener(model));
                 assertEquals("oldModel must be released", false, containsModelListener(oldModel));
-                assertEquals(smallRowHeight, table.getRowHeight(0));
+                final int actualRowHeight = table.getRowHeight( 0 );
+                assertEquals( format( "rowHeights differ", smallRowHeight, actualRowHeight ), smallRowHeight, actualRowHeight );
             }
         });
         
