@@ -3,10 +3,10 @@ name: Java CI
 on: [push]
 
 jobs:
-  test-macos-windows:
+  test-windows:
     strategy:
       matrix:
-        os: [windows-latest, macOS-latest]
+        os: [windows-latest]
     runs-on: ${{ matrix.os }}
 
     steps:
