@@ -4,18 +4,20 @@
  */
 package org.jdesktop.swingx.plaf;
 
+import static org.junit.Assume.assumeFalse;
+
 import java.util.logging.Logger;
 
 import javax.swing.LookAndFeel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-import junit.framework.TestCase;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import junit.framework.TestCase;
 
 /**
  * Testing LookAndFeelAddons properties/behaviour that might be effected
@@ -61,6 +63,7 @@ public class LookAndFeelAddonsSandboxTest extends TestCase {
      */
     @Test
     public void testSystemAddon() {
+        assumeFalse("System Addon Test skipped, as no System Addon is available.", UIManager.getSystemLookAndFeelClassName().equals(UIManager.getCrossPlatformLookAndFeelClassName()));
         LookAndFeelAddons addon = LookAndFeelAddons.getAddon();
         assertTrue("addon must be system addon, but was: " + addon, addon.isSystemAddon());
     }
