@@ -4,6 +4,9 @@
  */
 package org.jdesktop.swingx.hyperlink;
 
+import static org.junit.Assume.assumeFalse;
+import static org.junit.Assume.assumeTrue;
+
 import java.awt.Desktop;
 import java.awt.GraphicsEnvironment;
 import java.awt.event.ActionEvent;
@@ -13,14 +16,14 @@ import java.util.logging.Logger;
 
 import javax.swing.Action;
 
-import junit.framework.TestCase;
-
 import org.jdesktop.test.PropertyChangeReport;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import junit.framework.TestCase;
 
 
 /**
@@ -52,11 +55,10 @@ public class HyperlinkActionTest extends TestCase {
      */
     @Test
     public void testVisited() throws URISyntaxException {
-        // This test will not work in a headless configuration.
-        if (GraphicsEnvironment.isHeadless()) {
-            LOG.fine("cannot run ui test - headless environment");
-            return;
-        }
+        assumeFalse("cannot run ui test - headless environment", GraphicsEnvironment.isHeadless());
+        assumeTrue("Desktop not supported, therefore Desktop-dependent actions can't be tested.", Desktop.isDesktopSupported());
+        assumeTrue("Required Desktop-Action not supported, therefore test this action can't be tested.", Desktop.getDesktop().isSupported(Desktop.Action.BROWSE));
+
         URI uri = new URI("http://127.0.0.1");
         HyperlinkAction action = HyperlinkAction.createHyperlinkAction(uri);
         action.actionPerformed(null);
@@ -65,11 +67,10 @@ public class HyperlinkActionTest extends TestCase {
     
     @Test
     public void testURIActionFactoryMail() throws URISyntaxException {
-        // This test will not work in a headless configuration.
-        if (GraphicsEnvironment.isHeadless()) {
-            LOG.fine("cannot run ui test - headless environment");
-            return;
-        }
+        assumeFalse("cannot run ui test - headless environment", GraphicsEnvironment.isHeadless());
+        assumeTrue("Desktop not supported, therefore Desktop-dependent actions can't be tested.", Desktop.isDesktopSupported());
+        assumeTrue("Required Desktop-Action not supported, therefore test this action can't be tested.", Desktop.getDesktop().isSupported(Desktop.Action.MAIL));
+        
         URI uri = new URI("mailto:java-net@java.sun.com");
         HyperlinkAction action = HyperlinkAction.createHyperlinkAction(uri);
         assertEquals(true, action.isEnabled());
@@ -78,11 +79,7 @@ public class HyperlinkActionTest extends TestCase {
     
     @Test
     public void testURIActionFactoryBrowseNull() {
-        // This test will not work in a headless configuration.
-        if (GraphicsEnvironment.isHeadless()) {
-            LOG.fine("cannot run ui test - headless environment");
-            return;
-        }
+        assumeFalse("cannot run ui test - headless environment", GraphicsEnvironment.isHeadless());
         
         HyperlinkAction action = HyperlinkAction.createHyperlinkAction(null);
         assertEquals(false, action.isEnabled());
@@ -91,11 +88,7 @@ public class HyperlinkActionTest extends TestCase {
     
     @Test
     public void testURIActionPerformed() {
-        // This test will not work in a headless configuration.
-        if (GraphicsEnvironment.isHeadless()) {
-            LOG.fine("cannot run ui test - headless environment");
-            return;
-        }
+        assumeFalse("cannot run ui test - headless environment", GraphicsEnvironment.isHeadless());
         
         HyperlinkAction action = new HyperlinkAction();
         action.actionPerformed(null);
@@ -103,23 +96,17 @@ public class HyperlinkActionTest extends TestCase {
     
     @Test
     public void testURIActionNullMailEnabled() {
-        // This test will not work in a headless configuration.
-        if (GraphicsEnvironment.isHeadless()) {
-            LOG.fine("cannot run ui test - headless environment");
-            return;
-        }
-        
+        assumeFalse("cannot run ui test - headless environment", GraphicsEnvironment.isHeadless());
+        assumeTrue("Desktop not supported, therefore Desktop-dependent actions can't be tested.", Desktop.isDesktopSupported());
+        assumeTrue("Required Desktop-Action not supported, therefore test this action can't be tested.", Desktop.getDesktop().isSupported(Desktop.Action.MAIL));
+
         HyperlinkAction action = new HyperlinkAction(Desktop.Action.MAIL);
         assertEquals(true, action.isEnabled());
     }
     
     @Test
     public void testURIActionNullTargetBrowseDisabled() {
-        // This test will not work in a headless configuration.
-        if (GraphicsEnvironment.isHeadless()) {
-            LOG.fine("cannot run ui test - headless environment");
-            return;
-        }
+        assumeFalse("cannot run ui test - headless environment", GraphicsEnvironment.isHeadless());
         
         HyperlinkAction action = new HyperlinkAction();
         assertEquals(false, action.isEnabled());
@@ -127,22 +114,16 @@ public class HyperlinkActionTest extends TestCase {
     
     @Test
     public void testUriActionEmptyConstructor() {
-        // This test will not work in a headless configuration.
-        if (GraphicsEnvironment.isHeadless()) {
-            LOG.fine("cannot run ui test - headless environment");
-            return;
-        }
+        assumeFalse("cannot run ui test - headless environment", GraphicsEnvironment.isHeadless());
+
         HyperlinkAction action = new HyperlinkAction();
         assertEquals(Desktop.Action.BROWSE, action.getDesktopAction());
     }
     
     @Test (expected=IllegalArgumentException.class)
     public void testUriActionIllegalType() {
-        // This test will not work in a headless configuration.
-        if (GraphicsEnvironment.isHeadless()) {
-            LOG.fine("cannot run ui test - headless environment");
-            throw new IllegalArgumentException("dummy");
-        }
+        assumeFalse("cannot run ui test - headless environment", GraphicsEnvironment.isHeadless());
+
         new HyperlinkAction(Desktop.Action.EDIT);
     }
 
