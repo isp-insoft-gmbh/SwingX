@@ -8,8 +8,8 @@
   <version>1.6.7-SNAPSHOT</version>
   <url>http://www.swinglabs.org/</url>
   <ciManagement>
-    <system>Hudson</system>
-    <url>http://swinglabs.org/hudson</url>
+    <system>GitHub</system>
+    <url>https://github.com/isp-insoft-gmbh/SwingX/actions</url>
   </ciManagement>
   <licenses>
     <license>
@@ -18,13 +18,13 @@
     </license>
   </licenses>
   <issueManagement>
-    <system>JIRA</system>
-    <url>http://java.net/jira/browse/SWINGX</url>
+    <system>GitHub</system>
+    <url>https://github.com/isp-insoft-gmbh/SwingX/issues</url>
   </issueManagement>
   <scm>
-    <connection>scm:svn:https://svn.java.net/svn/swingx~svn/trunk</connection>
-    <developerConnection>scm:svn:https://svn.java.net/svn/swingx~svn/trunk</developerConnection>
-    <url>https://svn.java.net/svn/swingx~svn/trunk</url>
+    <connection>scm:git:https://github.com/isp-insoft-gmbh/SwingX.git</connection>
+    <developerConnection>scm:git:https://github.com/isp-insoft-gmbh/SwingX.git</developerConnection>
+    <url>https://github.com/isp-insoft-gmbh/SwingX</url>
   </scm>
   <description>Contains extensions to the Swing GUI toolkit, including new and enhanced components that provide functionality commonly required by rich client applications.</description>
   <build>
