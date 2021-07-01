@@ -1569,7 +1569,7 @@ public class JXDatePickerTest extends InteractiveTestCase {
      */
     @Test
     public void testDatePropertyThroughCommit() throws ParseException {
-        JXDatePicker picker = new JXDatePicker(new Date());
+        JXDatePicker picker = new JXDatePicker(new Date(), Locale.GERMANY);
         Date initialDate = picker.getDate();
         LOG.info("Initial picker date: " + initialDate);
         String text = picker.getEditor().getText();
@@ -1602,7 +1602,7 @@ public class JXDatePickerTest extends InteractiveTestCase {
      */
     @Test
     public void testSynchAllAfterCommit() throws ParseException {
-        JXDatePicker picker = new JXDatePicker(new Date());
+        JXDatePicker picker = new JXDatePicker(new Date(), Locale.GERMANY);
         LOG.info("Initial picker date: " + picker.getDate());
         String text = picker.getEditor().getText();
         Format[] formats = picker.getFormats();
