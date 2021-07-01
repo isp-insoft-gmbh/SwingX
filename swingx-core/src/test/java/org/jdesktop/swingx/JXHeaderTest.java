@@ -35,14 +35,13 @@ import javax.swing.plaf.ColorUIResource;
 import javax.swing.plaf.FontUIResource;
 import javax.swing.plaf.IconUIResource;
 
-import junit.framework.TestCase;
-
 import org.jdesktop.swingx.test.XTestUtils;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import junit.framework.TestCase;
 
 
 /**
@@ -68,7 +67,6 @@ public class JXHeaderTest extends TestCase {
     */
     @BeforeClass
     public static void setup() {
-      System.out.println( "Setup" );
       new JXHeader();
     }
   
