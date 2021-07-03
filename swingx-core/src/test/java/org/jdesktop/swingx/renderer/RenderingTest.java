@@ -26,7 +26,6 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseListener;
-import java.lang.reflect.InvocationTargetException;
 import java.text.DateFormat;
 import java.util.logging.Logger;
 
@@ -40,7 +39,6 @@ import javax.swing.JTable;
 import javax.swing.JTree;
 import javax.swing.ListCellRenderer;
 import javax.swing.LookAndFeel;
-import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
 import javax.swing.UIManager;
 import javax.swing.table.TableCellRenderer;

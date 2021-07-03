@@ -121,7 +121,6 @@ import org.jdesktop.swingx.hyperlink.EditorPaneLinkVisitor;
 import org.jdesktop.swingx.hyperlink.HyperlinkAction;
 import org.jdesktop.swingx.hyperlink.LinkModel;
 import org.jdesktop.swingx.hyperlink.LinkModelAction;
-import org.jdesktop.swingx.painter.BusyPainter;
 import org.jdesktop.swingx.painter.ImagePainter;
 import org.jdesktop.swingx.painter.MattePainter;
 import org.jdesktop.swingx.rollover.RolloverRenderer;

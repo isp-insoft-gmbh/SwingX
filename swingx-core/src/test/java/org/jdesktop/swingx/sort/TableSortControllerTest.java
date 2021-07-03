@@ -21,8 +21,6 @@
  */
 package org.jdesktop.swingx.sort;
 
-import static org.junit.Assert.*;
-
 import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;

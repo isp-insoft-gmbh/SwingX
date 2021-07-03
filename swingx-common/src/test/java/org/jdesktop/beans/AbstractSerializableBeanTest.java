@@ -31,8 +31,6 @@ import java.beans.PropertyVetoException;
 import java.beans.VetoableChangeListener;
 import java.io.Serializable;
 
-import junit.framework.TestCase;
-
 import org.jdesktop.test.SerializableSupport;
 import org.junit.Test;
 

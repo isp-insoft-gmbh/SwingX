@@ -1,6 +1,5 @@
 package org.jdesktop.swingx.plaf;
 
-import java.awt.TextComponent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 

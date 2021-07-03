@@ -28,7 +28,6 @@ import org.jdesktop.swingx.JXTable;
 import org.jdesktop.swingx.event.TableColumnModelExtListener;
 import org.jdesktop.swingx.test.ColumnModelReport;
 import org.jdesktop.test.TestUtils;
-import org.jdesktop.test.matchers.Matchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

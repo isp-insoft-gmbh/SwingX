@@ -77,8 +77,6 @@ import org.jdesktop.swingx.treetable.TreeTableNode;
 import org.jdesktop.test.TableModelReport;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * Test to exposed known issues of <code>JXTreeTable</code>. <p>
  * 

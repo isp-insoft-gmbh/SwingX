@@ -21,7 +21,6 @@
 package org.jdesktop.swingx.decorator;
 
 import java.awt.Component;
-import java.awt.Font;
 
 import javax.swing.JComponent;
 

@@ -34,7 +34,6 @@ import javax.swing.ListCellRenderer;
 import org.jdesktop.swingx.JXComboBox.DelegatingRenderer;
 import org.jdesktop.swingx.JXListTest.CustomDefaultRenderer;
 import org.jdesktop.swingx.decorator.ComponentAdapter;
-import org.jdesktop.swingx.decorator.ComponentAdapterTest.JXListT;
 import org.jdesktop.swingx.renderer.DefaultListRenderer;
 import org.jdesktop.swingx.renderer.StringValue;
 import org.jdesktop.swingx.renderer.StringValues;

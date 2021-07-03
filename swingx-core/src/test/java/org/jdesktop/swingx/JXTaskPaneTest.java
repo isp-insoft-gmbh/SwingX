@@ -9,7 +9,6 @@ package org.jdesktop.swingx;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 
 import javax.swing.AbstractAction;
 import javax.swing.Action;
@@ -23,7 +22,6 @@ import org.jdesktop.swingx.icon.EmptyIcon;
 import org.jdesktop.swingx.plaf.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.metal.MetalLookAndFeelAddons;
 import org.jdesktop.test.PropertyChangeReport;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

@@ -21,8 +21,6 @@
  */
 package org.jdesktop.swingx.search;
 
-import static org.junit.Assert.*;
-
 import java.util.Arrays;
 
 import junit.framework.TestCase;

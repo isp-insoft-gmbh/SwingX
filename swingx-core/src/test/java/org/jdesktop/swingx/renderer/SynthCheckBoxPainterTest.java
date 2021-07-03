@@ -19,12 +19,9 @@ import java.util.Random;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JCheckBox;
-import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
-import javax.swing.JTable;
 import javax.swing.UIManager;
-import javax.swing.plaf.ColorUIResource;
 import javax.swing.plaf.synth.SynthLookAndFeel;
 import javax.swing.table.AbstractTableModel;
 

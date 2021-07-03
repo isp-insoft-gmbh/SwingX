@@ -28,7 +28,6 @@ package org.jdesktop.swingx.plaf.basic.core;
  * SUN PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
 
-import java.awt.Toolkit;
 import java.awt.event.*;
 import java.awt.dnd.DragSource;
 import javax.swing.*;

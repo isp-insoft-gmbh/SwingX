@@ -29,7 +29,6 @@ import java.util.logging.Logger;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
-import javax.swing.DefaultRowSorter;
 import javax.swing.ListModel;
 import javax.swing.RowFilter;
 import javax.swing.SortOrder;

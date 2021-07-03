@@ -32,7 +32,6 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.Box;
 import javax.swing.DefaultCellEditor;
-import javax.swing.DefaultListModel;
 import javax.swing.DefaultListSelectionModel;
 import javax.swing.DefaultRowSorter;
 import javax.swing.Icon;
@@ -64,8 +63,6 @@ import javax.swing.table.TableColumn;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
-import org.jdesktop.swingx.JXTableUnitTest.TakeItAllDummy;
-import org.jdesktop.swingx.JXTableUnitTest.ThrowingDummy;
 import org.jdesktop.swingx.action.AbstractActionExt;
 import org.jdesktop.swingx.sort.RowFilters;
 import org.jdesktop.swingx.test.XTestUtils;
@@ -79,8 +76,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-
-import static org.junit.Assert.*;
 
 import static org.jdesktop.swingx.JXTableUnitTest.*;
 

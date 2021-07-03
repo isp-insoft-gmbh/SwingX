@@ -21,7 +21,6 @@ import javax.swing.Action;
 import javax.swing.Box;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
-import javax.swing.DefaultRowSorter;
 import javax.swing.JComponent;
 import javax.swing.JList;
 import javax.swing.JPopupMenu;
@@ -53,8 +52,6 @@ import org.jdesktop.swingx.sort.RowFilters;
 import org.jdesktop.test.AncientSwingTeam;
 import org.junit.After;
 import org.junit.Before;
-
-import sun.font.CreatedFontTracker;
 
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class JXListVisualCheck extends InteractiveTestCase { //JXListTest {

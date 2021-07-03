@@ -21,8 +21,6 @@
  */
 package org.jdesktop.swingx.decorator;
 
-import static org.junit.Assert.*;
-
 import java.awt.Color;
 
 import javax.swing.ListModel;

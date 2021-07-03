@@ -16,7 +16,6 @@ import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 import javax.swing.AbstractListModel;
-import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
