@@ -55,12 +55,12 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JFormattedTextField;
+import javax.swing.JFormattedTextField.AbstractFormatter;
+import javax.swing.JFormattedTextField.AbstractFormatterFactory;
 import javax.swing.JPopupMenu;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import javax.swing.JFormattedTextField.AbstractFormatter;
-import javax.swing.JFormattedTextField.AbstractFormatterFactory;
 import javax.swing.border.Border;
 import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
@@ -74,11 +74,11 @@ import org.jdesktop.swingx.JXMonthView;
 import org.jdesktop.swingx.SwingXUtilities;
 import org.jdesktop.swingx.calendar.CalendarUtils;
 import org.jdesktop.swingx.calendar.DatePickerFormatter;
-import org.jdesktop.swingx.calendar.DateSelectionModel;
 import org.jdesktop.swingx.calendar.DatePickerFormatter.DatePickerFormatterUIResource;
+import org.jdesktop.swingx.calendar.DateSelectionModel;
 import org.jdesktop.swingx.event.DateSelectionEvent;
-import org.jdesktop.swingx.event.DateSelectionListener;
 import org.jdesktop.swingx.event.DateSelectionEvent.EventType;
+import org.jdesktop.swingx.event.DateSelectionListener;
 import org.jdesktop.swingx.plaf.DatePickerUI;
 
 /**
@@ -620,7 +620,12 @@ public class BasicDatePickerUI extends DatePickerUI {
 
 
 //------------------------------- controller methods/classes 
-    
+    /**
+     * We cache this, as it is called quite often and the Stack-Trace is never used, nor is the message read.
+     * It's simply used in order to workaround an infinite loop as it seems.
+     */
+    private final PropertyVetoException dateNotSelectableException = new PropertyVetoException( "date not selectable", null );
+
     /**
      * {@inheritDoc}
      */
@@ -630,11 +635,11 @@ public class BasicDatePickerUI extends DatePickerUI {
             datePicker.getMonthView().getSelectionModel().getNormalizedDate(date);
         if (CalendarUtils.areEqual(cleaned, datePicker.getDate())) { 
             // one place to interrupt the update spiral
-            throw new PropertyVetoException("date not selectable", null);
+            throw dateNotSelectableException;
         }
         if (cleaned == null) return cleaned;
         if (datePicker.getMonthView().isUnselectableDate(cleaned)) {
-            throw new PropertyVetoException("date not selectable", null);
+            throw dateNotSelectableException;
          }
         return cleaned;
     }
