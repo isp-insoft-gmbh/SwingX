@@ -3,9 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.swinglabs.swingx</groupId>
   <artifactId>swingx-project</artifactId>
+  <version>${project.version}</version>
   <packaging>pom</packaging>
   <name>SwingX</name>
-  <version>1.6.8-SNAPSHOT</version>
   <url>http://www.swinglabs.org/</url>
   <ciManagement>
     <system>GitHub</system>
@@ -175,6 +175,7 @@
     </dependencies>
   </dependencyManagement>
   <properties>
+    <project.version>1.6.8-SNAPSHOT</project.version>
     <project.generatedSourcesDirectory>${project.build.directory}/generated-sources</project.generatedSourcesDirectory>
     <project.generatedAnnotations>${project.generatedSourcesDirectory}/annotations</project.generatedAnnotations>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
